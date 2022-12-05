@@ -56,7 +56,7 @@ if(dropdownBtn) {
 if(moveToProfilePage) {
     for(i of moveToProfilePage) {
         i.addEventListener("click", function () {
-            window.open("../Profile/profile.html", '_blank');
+            window.open("./Profile/profile.html", '_blank');
         });
     }
 }
@@ -65,7 +65,7 @@ if(switchAccountBtn) {
     for(i of switchAccountBtn) {
         i.addEventListener("click", function () {
             localStorage.setItem("isLogin", false);
-            window.location.assign("../Login/login.html");
+            window.location.assign("./Login/login.html");
         });
     }
 }
@@ -74,7 +74,7 @@ if(logOutBtn) {
     for(i of logOutBtn) {
         i.addEventListener("click", function () {
             localStorage.setItem("isLogin", false);
-            window.location.assign("../index.html");
+            window.location.assign("./index.html");
         })
     }
 }
@@ -83,7 +83,7 @@ if(logOutBtn) {
 const moveToCartBtn = document.querySelector(".move-to-cart-btn");
 if(moveToCartBtn) {
     moveToCartBtn.addEventListener('click', function() {
-        window.open('../Cart/cart.html', '_blank');
+        window.open('./Cart/cart.html', '_blank');
     });
 }
 
@@ -123,7 +123,7 @@ const headerFormSearch = document.querySelector("header .form-search");
 const headerFormSearchInput = headerFormSearch.querySelector("input");
 headerFormSearch.addEventListener("submit", function () {
     localStorage.setItem("SearchingInput", headerFormSearchInput.value);
-    window.open("../Search/search.html", '_blank');
+    window.open("./Search/search.html", '_blank');
 })
 
 
