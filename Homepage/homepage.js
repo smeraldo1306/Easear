@@ -114,7 +114,7 @@ else {
     cartPopup.innerHTML = `
     <div class="row">
         <p class="text-center col-12">Bạn chưa đăng nhập.</p>
-        <a class="text-center col-12" style="color: var(--main-color); font-weight: 600;" href="../Login/login.html">Đăng nhập ngay?</a>
+        <a class="text-center col-12" style="color: var(--main-color); font-weight: 600;" href="./Login/login.html">Đăng nhập ngay?</a>
     </div>`
     moveToCartBtn.classList.add("disabled");
 }
