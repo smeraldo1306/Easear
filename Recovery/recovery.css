@@ -1,0 +1,82 @@
+
+.input {
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    height: 40px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--main-color);
+    border-width: 2px;
+}
+
+main {
+    margin-top: var(--header-height);
+}
+
+.recovery {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.recovery .recovery-form {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.recovery .recovery-form .form-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.recovery .recovery-background {
+    display: none;
+}
+
+.recovery .email-input,
+.recovery .password-input {
+    position: relative;
+}
+
+.recovery .code-input {
+    width: 50%;
+    margin: 0 8px 0 12px;
+}
+
+.recovery .get-code-btn {
+    background: rgb(39, 39, 39);
+    color: white;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.recovery .submit-btn {
+    margin-top: 40px;
+    background: var(--main-color);
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    text-transform: uppercase;
+
+}
+
+.hide {
+    display: none;
+}
+
+.modal-backdrop.show {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.invalid-feedback {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+}

@@ -1,0 +1,413 @@
+/* For very small screen */
+@media (max-width: 374px) {
+    header .search-btn {
+        font-size: 14px;
+    }
+
+    header .user > .row {
+        padding-left: 12px;
+    }
+
+    .cart-modal p {
+        font-size: 14px;
+    }
+
+    .product-trending .btn {
+        width: 100px !important;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .best-sale-title {
+        font-size: 24px;
+    }
+
+    .receive-information form {
+        width: 100%;
+    }
+
+    .receive-information form button {
+        font-size: 12px;
+        width: 80px;
+    }
+
+    .login, .signup {
+        padding: 32px;
+    }
+
+    .login .login-form,
+    .signup .signup-form,
+    .recovery .recovery-form {
+        padding: 16px;
+    }
+
+    .login .login-form .remember-me,
+    .login .login-form .signup-link {
+        font-size: 10px;
+    }
+
+    .signup .signup-form .agree-term,
+    .signup .signup-form .login-link {
+        font-size: 12px;
+    }
+
+    .login-gg-btn, .signup-gg-btn {
+        font-size: 12px;
+    }
+
+    .recovery .code-input {
+        margin-right: 0;
+    }
+
+    .recovery .get-code-btn {
+        margin-right: 12px;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .news-header .navigation-btn .btn {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    .news-body {
+        padding: 0 12px;
+    }
+
+    .news-header .news-slider .carousel-caption h5 {
+        font-size: 14px;
+    }
+
+    .profile-btn .btn {
+        font-size: 14px;
+        padding: 0;
+    }
+}
+
+/* Small screen and up */
+@media (min-width: 576px) {
+    header .user .dropdown {
+        right: 36px;
+    }
+
+    .product-introduce .row,
+    .news-introduce .row {
+        align-items: center;
+    }
+
+    .news-introduce .row {
+        flex-direction: row-reverse;
+    }
+
+    .product-introduce .product-introduce-img,
+    .news-introduce .news-introduce-img {
+        margin-bottom: 0;
+        padding: 16px;
+    }
+
+    .product-introduce .product-introduce-content,
+    .news-introduce .news-introduce-content {
+        padding: 16px;
+    }
+
+    .login, .signup {
+        padding: 72px;
+    }
+
+    .cart-modal .modal-dialog {
+        position: absolute;
+        width: 100%;
+        margin: 16px;
+        right: 0;
+        top: 0;
+    }
+
+    .recovery .code-input {
+        width: 55%;
+        margin-left: 12px;
+        margin-right: 0;
+    }
+
+    .news-header .news-slider .carousel-caption {
+        margin-bottom: 32px;
+    }
+
+    .news-header .news-slider .carousel-caption h5 {
+        font-size: 30px;
+    }
+
+    .flash-sale .count-time {
+        text-align: right;
+    }
+
+}
+
+
+/* From medium screen (iPad Mini) and up */
+@media (min-width: 768px) {
+    header .user .user-img img{
+        height: 100px;
+    }
+
+    .user .username, .user .user-level {
+        font-size: 20px;
+    }
+
+    .discount {
+        height: 40vw;
+    }
+
+    .product-trending-img {
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    .product-trending-info {
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-right: 80px;
+        text-align: left;
+        row-gap: 12px;
+    }
+
+    .product-trending .row{
+        height: 60vh;
+        min-height: 500px;
+        max-height: 600px;
+        align-items: center;
+    }
+
+    .product-introduce > .row,
+    .news-introduce > .row {
+        padding: 32px;
+    }
+
+    .news-header .news-slider .carousel-caption {
+        margin-bottom: 0px;
+    }
+
+    footer .navbar .container-fluid {
+        padding: 8px 32px;
+    }
+
+    footer .navbar .navbar-brand {
+        font-size: 20px;
+    }
+
+    footer .navbar .nav-link {
+        padding-left: 0 !important;
+    }
+
+    .news-header .news-slider {
+        height: 40vw;
+    }
+
+    .news-item {
+        min-height: 550px;
+    }
+
+    .category-list .category-item img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .login .login-form,
+    .signup .signup-form {
+        border-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .login .login-background,
+    .signup .signup-background,
+    .recovery .recovery-background {
+        position: relative;
+        display: block;
+        background: url(../assets/img/login-background.jpg);
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }  
+
+    .profile-detail-container {
+        width: 700px;
+    }
+
+}
+
+/* From large screen (desktop) and up */
+@media (min-width: 992px) {
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    header .user {
+        display: none !important;
+    }
+
+    header .user-lg-screen {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 136px;
+    }
+
+    .user-lg-screen .dropdown-toggle {
+        height: var(--header-height);
+        width: 54px;
+        background: none;
+        border: none;
+        color: var(--main-color);
+        font-size: 24px;
+        transition: .25s;
+    }
+
+    .user-lg-screen .dropdown-toggle:hover,
+    .header-search-btn:hover {
+        cursor: pointer;
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+
+    .user-lg-screen .dropdown-toggle:after {
+        display: none;
+    }
+
+    .user-lg-screen .dropdown-toggle:active {
+        background: var(--main-color);
+    }
+
+    .user-lg-screen .dropdown-menu {
+        width: 400px;
+        animation: fade .3s ease-in-out;
+    }
+
+    .user-lg-screen .dropdown-menu > .row {
+        width: 100%;
+        margin: 0;
+        padding: 16px 24px;
+    }
+
+    .user-lg-screen .dropdown-item {
+        padding: 12px 24px;
+        font-size: 20px;
+        transition: .25s;
+    }
+
+    .user-lg-screen .dropdown-item:hover {
+        background: var(--main-color);
+        color: white;
+        cursor: pointer;
+    }
+
+    .user-lg-screen .dropdown-item i{
+        width: 40px;
+    }
+
+    .header-search-btn {
+        display: block;
+        position: absolute;
+        right: 76px;
+        transition: .25s;
+        height: 60px;
+        background: none;
+        width: 54px;
+        font-size: 24px;
+        border-radius: 8px;
+    }
+
+    .header-search-btn:active {
+        background: var(--main-color);
+        color: white;
+    }
+    
+    header .navbar .form-search {
+        display: none;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        right: 76px;
+        top: var(--header-height);
+        margin-top: 12px;
+        height: 60px;
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .show-search-input {
+        animation: fade .5s ease;
+        display: flex !important;
+
+    }
+
+    header .header-cart-btn {
+        position: absolute;
+        right: 16px;
+    }
+
+    header .navbar-nav .nav-item {
+        width: 130px;
+        text-align: center;
+        border: none;
+    }
+
+    header .navbar-nav .nav-item:hover .nav-link {
+        background-color: var(--main-color);
+        color: white;
+    }
+
+    .product-introduce .product-introduce-img,
+    .news-introduce .news-introduce-img {
+        height: 500px;
+    }
+
+    .product-introduce .product-introduce-content,
+    .news-introduce .news-introduce-content {
+        row-gap: 32px;
+    }
+
+    .product-introduce-content .product-introduce-btn,
+    .news-introduce-content .news-introduce-btn {
+        font-size: 24px;
+        font-weight: 400;
+        height: 60px;
+        width: 300px;
+        margin-top: 8px;
+    }
+
+    .product-introduce-content .product-introduce-btn:hover,
+    .news-introduce-content .news-introduce-btn:hover {
+        transform: scale(0.95);
+        opacity: 0.7;
+    }
+
+    .product-trending-info {
+        padding-right: 110px;
+    }
+
+    .category-list .category-item img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .category-list .category-item p {
+        font-size: 16px;
+    }
+
+    footer .navbar .container-fluid {
+        padding: 8px 80px;
+    }
+
+}
+

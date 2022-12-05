@@ -1,0 +1,247 @@
+
+
+.discount {
+    margin-top: var(--header-height);
+    height: 50vw;
+}
+
+.discount .carousel-inner {
+    height: 100%;
+}
+
+.discount .carousel-inner .carousel-item{
+    height: 100%;
+}
+
+.discount .carousel-inner .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.best-sale-title {
+    width: 100%;
+    margin: 0;
+    height: 80px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.product-trending {
+    background: rgb(17, 17, 17);
+}
+
+.product-trending .carousel-indicators {
+    margin-bottom: 8px;
+}
+
+.product-trending .carousel-item .container-fluid {
+    padding: 0;
+
+}
+
+.product-trending .row{
+    height: 60vh;
+    min-height: 630px;
+    color: white;
+    margin: 0;
+    padding: 32px 0 48px 0;
+
+}
+
+@keyframes ShowImg {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.product-trending-img {
+    animation: ShowImg 1s ease-in-out;
+    height: 55%;
+    padding: 0 16px;
+    margin-bottom: 16px;
+
+}
+
+.product-trending-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+@keyframes ShowInfo {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.product-trending-info {
+    height: 40%;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: ShowInfo 1s ease-in;
+    text-align: center;
+}
+
+.product-trending-info .product-trending-title {
+    margin: 0;
+}
+
+
+.product-trending-info .product-trending-desc,
+.product-trending-info .product-trending-price {
+    margin: 0;
+}
+
+.product-trending-info .product-trending-btn .btn{
+    text-transform: uppercase;
+    width: 145px;
+}
+
+.product-trending-btn .btn-buy {
+    background: white;
+    color: var(--main-color);
+    margin-right: 5px;
+}
+
+.product-trending-btn .btn-more {
+    color: white;
+    background: none;
+}
+
+.product-introduce > .row,
+.news-introduce > .row {
+    padding: 32px 16px;
+}
+
+.product-introduce, .news-introduce {
+    margin-bottom: 32px;
+}
+
+.product-introduce .product-introduce-img,
+.news-introduce .news-introduce-img {
+    height: 320px;
+    margin-bottom: 32px;
+}
+
+.product-introduce-img img,
+.news-introduce-img img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-introduce .product-introduce-content,
+.news-introduce .news-introduce-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    color: #050F3C;
+}
+
+.product-introduce-content .product-introduce-btn,
+.news-introduce-content .news-introduce-btn {
+    width: fit-content;
+    background: var(--main-color);
+    height: 50px;
+    border: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.product-introduce-btn a,
+.news-introduce-btn a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.product-introduce-content .product-introduce-title,
+.product-introduce-content .product-introduce-desc,
+.news-introduce-content .news-introduce-title,
+.news-introduce-content .news-introduce-desc {
+    margin: 0;
+    padding-right: 8px;
+}
+
+.product-introduce-content .product-introduce-title,
+.news-introduce-content .news-introduce-title{
+    text-transform: uppercase;
+}
+
+.receive-information {
+    background: url(../assets/img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.receive-information .row {
+    padding: 16px;
+    justify-content: center;
+    row-gap: 16px;
+}
+
+.receive-information h1 {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.receive-information form {
+    width: 90%;
+    max-width: 480px;
+    height: 48px;
+    margin: 7px 0;
+    position: relative;
+}
+
+.receive-information form input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    padding: 2px 110px 2px 16px;
+
+}
+
+.receive-information form button {
+    position: absolute;
+    width: 100px;
+    height: calc(100% - 8px);
+    padding: 0 4px;
+    right: 16px;
+    top: 4px;
+    background: var(--main-color);
+    color: white;
+    border-radius: 100px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.receive-information form button:hover {
+    transform: scale(0.95);
+    opacity: 0.9;
+}
+
+
+
+

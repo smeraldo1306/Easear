@@ -1,0 +1,154 @@
+
+.input {
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    height: 40px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--main-color);
+    border-width: 2px;
+}
+
+main {
+    margin-top: var(--header-height);
+}
+
+.login {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.login .login-form {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.login .login-form .form-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.login .login-background {
+    display: none;
+}
+
+.login .login-gg-btn {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 16px 0;
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    color: var(--main-color);
+}
+
+.login .login-gg-btn:active{
+    background: var(--main-color);
+    color: white;
+}
+
+
+.login .or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+    gap: 16px;
+}
+
+.login .or span {
+    height: 1px;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.login .email-input,
+.login .password-input {
+    position: relative;
+}
+
+.login .remember-me {
+    margin: 16px 0;
+    font-size: 12px;
+}
+
+.login .remember-me > .row {
+    padding: 0 20px;
+}
+
+.login .remember-me label {
+    display: flex;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0;
+}
+
+.login .remember-me .form-check-input {
+    box-shadow: none !important;
+    outline: none;
+    border: 1px solid var(--main-color);
+    margin-right: 8px;
+    margin-top: 0;
+}
+
+.login .remember-me .form-check-input:checked{
+    background-color: var(--main-color);
+}
+
+.login .remember-me .form-check-label {
+    color: var(--main-color) !important;
+}
+
+.login .remember-me a {
+    color: var(--main-color);
+    text-align: right;
+    padding: 0;
+    font-weight: 600;
+}
+
+.login .login-btn {
+    width: 100%;
+    margin: 16px 0;
+    background: var(--main-color);
+    color: white;
+    border-radius: 8px;
+}
+
+.login .signup-link {
+    padding: 0;
+    text-decoration: none;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.login .signup-link span:nth-child(2) {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.invalid-feedback {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+}
+
+.hide {
+    display: none;
+}
+
+.modal-backdrop.show {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}

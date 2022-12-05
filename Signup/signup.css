@@ -1,0 +1,131 @@
+
+.input {
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    margin: 4px 0;
+    padding: 0 12px;
+}
+
+main {
+    margin-top: var(--header-height);
+}
+
+.signup {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.signup .signup-form {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.signup .signup-background {
+    display: none;
+}
+
+.signup .signup-form > .row {
+    margin: 0;
+    row-gap: 12px;
+}
+
+.signup .signup-form .form-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.signup .signup-gg-btn {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    color: var(--main-color);
+    margin: 16px 0;
+}
+
+.signup .signup-gg-btn:active{
+    background: var(--main-color);
+    color: white;
+}
+
+
+.signup .or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.signup .or span {
+    height: 1px;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.signup .agree-term {
+    font-size: 14px;
+}
+
+.signup .agree-term label {
+    cursor: pointer;
+}
+
+.signup .agree-term .form-check-input {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid var(--main-color);
+    margin-right: 8px;
+}
+
+.signup .agree-term .form-check-input:checked {
+    background-color: var(--main-color);
+}
+
+.signup .agree-term label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+}
+
+.signup .agree-term label span {
+    font-weight: 700;
+}
+
+.signup .signup-btn {
+    background: var(--main-color);
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.signup .login-link {
+    padding: 0;
+    text-decoration: none;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.signup .login-link span:nth-child(2) {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.invalid-feedback {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+}

@@ -1,0 +1,46 @@
+h5 {
+    font-family: 'Anybody', cursive;
+    font-weight: 700;
+}
+
+main {
+    margin-top: var(--header-height);
+}
+
+.search-result .search-result-list .product-item-container {
+    padding: 0 8px 16px 8px;
+}
+
+.search-result .search-result-list .product-item {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    transition: .3s;
+}
+
+.search-result .product-item:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+.search-result .product-item > img {
+    width: 100%;
+    height: 130px;
+    background: rgba(0, 0, 0, 0.07);
+    object-fit: contain;
+    object-position: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.search-result .product-item .star-rate {
+    width: 25px;
+    margin-left: 4px;
+}
+
+.search-result .not-found {
+    padding-top: 30%;
+    padding-bottom: 30%;
+}

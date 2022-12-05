@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <script src="https://kit.fontawesome.com/19b1e0589b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Boostrap Files/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/base.css">
+    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="../assets/responsive.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <a href="../index.html">
+                <img class="header-logo-page" src="../assets/img/header-logo.png" alt="">
+              </a>
+              <button class="header-search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              
+              <button type="" class="header-cart-btn" data-bs-toggle="modal" data-bs-target="#cart-modal" data-backdrop="false">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+
+              <div class="user">
+                <div class="row">
+                  <div class="user-img col-3">
+                    <img src="../assets/img/avatar-default.png" alt="">
+                  </div>
+
+                  <div class="user-desc col-9">
+                    <p class="username" style="font-weight: 600;"></p>
+                    <p class="user-level" style="font-weight: 600;">Hạng thành viên: Golden</p>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-angle-down"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                          <a class="dropdown-item profile-detail" href="#">
+                            <i class="fa-regular fa-user"></i>Hồ sơ chi tiết
+                          </a>
+                          </li>
+                        <li>
+                          <a class="dropdown-item switch-account" href="#">
+                            <i class="fa-solid fa-repeat pe-3"></i>Chuyển tài khoản
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item log-out" href="">
+                            <i class="fa-solid fa-power-off pe-3"></i>Đăng xuất
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="user-lg-screen dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-regular fa-user"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end container">
+                  <li class="row">
+                    <div class="user-img col-3">
+                      <img src="../assets/img/avatar-default.png" alt="">
+                    </div>
+                    <div class="user-desc col-9">
+                      <h5 class="username mb-2" style="font-weight: 600;"></h5>
+                      <h5 class="user-level" style="font-weight: 600;">Hạng thành viên: Golden</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item profile-detail" href="#">
+                      <i class="fa-regular fa-user"></i>Hồ sơ chi tiết
+                    </a>
+                    </li>
+                  <li>
+                    <a class="dropdown-item switch-account" href="#">
+                      <i class="fa-solid fa-repeat pe-3"></i>Chuyển tài khoản
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item log-out" href="">
+                      <i class="fa-solid fa-power-off pe-3"></i>Đăng xuất
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <form class="form-search" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                  <button class="btn search-btn" type="submit">Tìm kiếm</button>
+              </form>
+
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Product/product.html">Sản phẩm</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="../News/news.html">Tin tức</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../Contact/contact.html">Liên hệ</a>
+                </li>
+
+                <li class="nav-item login">
+                  <a class="nav-link" href="../Login/login.html">Đăng nhập</a>
+                </li>
+
+                <li class="nav-item signup">
+                  <a class="nav-link" href="../Signup/signup.html">Đăng ký</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+        <div class="flash-sale">
+            <div class="row mb-2">
+                <h2 class="col-12 col-sm-6 mt-3 mb-0 ps-3 ps-md-4">Flash Sale</h2>
+                <p class="count-time col-12 col-sm-6 ps-3 ps-md-4 pe-3 pe-4"></p>
+            </div>
+            <div class="row pt-2 pt-md-3 pb-3 pb-md-4">
+                <div class="flash-sale-list ps-3 ps-md-4">
+                </div>
+            </div>
+        </div>
+
+        <div class="all-product">
+            <div class="row mb-2">
+                <h2 class="col-7 col-sm-9 mt-3 mb-0 ps-3 ps-md-4"></h2>
+                <button class="show-filter-btn col-5 col-sm-3 mt-3 mb-0 pe-3 pe-md-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <p class="p-0 show-filter">Bộ lọc</p>
+                    <i class="p-0 fa-solid fa-filter ms-3"></i>
+                </button>
+            </div>
+
+            <div class="row product-item-list p-2 p-md-3"></div>
+        </div>
+
+        <div class="filter offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header p-3 p-md-4">
+            <h2 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Bộ lọc</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body p-3 p-md-4">
+            <form action="">
+              <button class="btn w-100 btn-outline-dark clear-filter-btn" type="reset">Xoá tất cả bộ lọc</button>
+              <div class="container filter-category">
+                <h5 class="row">Kiểu dáng</h5>
+                <div class="row">
+                  <div class="col-2 check-box">
+                    <input class="form-check-input category-checkbox-type" type="checkbox" value="In-ear" id="inear">
+                  </div>
+                  <label for="inear" class="col-10">Tai nghe In-ear</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input category-checkbox-type" type="checkbox" value="On-ear" id="onear">
+                  </div>
+                  <label for="onear" class="col-10">Tai nghe On-ear</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input category-checkbox-type" type="checkbox" value="Over-ear" id="overear">
+                  </div>
+                  <label for="overear" class="col-10">Tai nghe Over-ear</label>
+  
+                </div>
+                
+              </div>
+
+              <div class="container filter-connection">
+                <h5 class="row">Kết nối</h5>
+                <div class="row">
+                  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input category-checkbox-connection" type="checkbox" value="false" id="noWireless">
+                  </div>
+                  <label for="noWireless" class="col-10">Có dây</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input category-checkbox-connection" type="checkbox" value="true" id="wireless">
+                  </div>
+                  <label for="wireless" class="col-10">Không dây</label>
+
+                </div>
+                
+              </div>
+
+              <div class="container filter-gaming">
+                <h5 class="row">Phân loại</h5>
+                <div class="row">
+                  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input category-checkbox-gaming" type="checkbox" value="false" id="">
+                  </div>
+                  <label for="" class="col-10">Bình thường</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input category-checkbox-gaming" type="checkbox" value="true" id="">
+                  </div>
+                  <label for="" class="col-10">Gaming</label>
+
+                </div>
+                
+              </div>
+  
+              <div class="container filter-brand">
+                <h5 class="row">Thương hiệu</h5>
+                <div class="row">
+                  <div class="col-2 check-box">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="Marshall" id="">
+                  </div>
+                  <label for="check" class="col-10">Marshall</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="SONY" id="">
+                  </div>
+                  <label for="check" class="col-10">SONY</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="ASUS" id="">
+                  </div>
+                  <label for="check" class="col-10">ASUS</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="JBL" id="">
+                  </div>
+                  <label for="check" class="col-10">JBL</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="Apple" id="">
+                  </div>
+                  <label for="check" class="col-10">Apple</label>
+
+                  <div class="col-2 check-box">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="KZ" id="">
+                  </div>
+                  <label for="check" class="col-10">KZ</label>
+  
+                </div>
+              </div>
+  
+              <div class="container filter-price">
+                <h5 class="row">Giá</h5>
+                <div class="row">
+                  <div class="col-2 check-box">
+                    <input class="form-check-input price-checkbox" type="checkbox" value="1" id="">
+                  </div>
+                  <label for="check" class="col-10">Dưới 1.000.000 VNĐ</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input price-checkbox" type="checkbox" value="2" id="">
+                  </div>
+                  <label for="check" class="col-10">1.000.000 VNĐ - 2.999.999 VNĐ</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input price-checkbox" type="checkbox" value="3" id="">
+                  </div>
+                  <label for="check" class="col-10">3.000.000 VNĐ - 4.999.999 VNĐ</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input price-checkbox" type="checkbox" value="4" id="">
+                  </div>
+                  <label for="check" class="col-10">5.000.000 VNĐ - 9.999.999 VNĐ</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input price-checkbox" type="checkbox" value="5" id="">
+                  </div>
+                  <label for="check" class="col-10">Từ 10.000.000 VNĐ trở lên</label>
+  
+                </div>
+              </div>
+  
+              <div class="container filter-rate">
+                <h5 class="row">Đánh giá</h5>
+                <div class="row">
+                  <div class="col-2 check-box">
+                    <input class="form-check-input rate-check-radio" type="radio" name="flexRadioDefault" value="5" id="">
+                  </div>
+                  <label for="flexRadioDefault1" class="col-10">5 sao</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input rate-check-radio" type="radio" name="flexRadioDefault" value="4" id="">
+                  </div>
+                  <label for="flexRadioDefault1" class="col-10">Từ 4 - 5 sao</label>
+
+                  <div class="col-2 check-box">
+                    <input class="form-check-input rate-check-radio" type="radio" name="flexRadioDefault" value="3" id="">
+                  </div>
+                  <label for="flexRadioDefault1" class="col-10">Từ 3 - 4 sao</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input rate-check-radio" type="radio" name="flexRadioDefault" value="2" id="">
+                  </div>
+                  <label for="flexRadioDefault1" class="col-10">Từ 2 - 3 sao</label>
+  
+                  <div class="col-2 check-box">
+                    <input class="form-check-input rate-check-radio" type="radio" name="flexRadioDefault" value="1" id="">
+                  </div>
+                  <label for="flexRadioDefault1" class="col-10">Từ 1 - 2 sao</label>
+  
+  
+                </div>
+              </div>
+  
+              <div class="container filter-btn">
+                <div class="row">
+                  <button class="btn filter-btn-cancel col-5" type="button">Huỷ bỏ</button>
+                  <button class="btn filter-btn-apply col-5" type="submit">Áp dụng</button>
+                </div>
+              </div>
+            </form>
+            
+
+          </div>
+        </div>
+
+        <div class="modal fade cart-modal" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title fs-4" id="exampleModalLabel">Giỏ hàng</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn move-to-cart-btn">Đến giỏ hàng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="" class="rounded me-2" alt="">
+              <p class="me-auto">Giỏ hàng</p>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+            </div>
+          </div>
+        </div>
+
+    </main>
+
+    <footer class="">
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-expand-md col-12 col-md-4">
+            <div class="container-fluid d-md-flex flex-md-column align-items-md-start">
+              <a class="navbar-brand">Hệ thống cửa hàng</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1" class="icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </label>  
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page">Miền Bắc</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Miền Trung</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Miền Nam</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <nav class="navbar navbar-expand-md col-12 col-md-4">
+            <div class="container-fluid d-md-flex flex-md-column align-items-md-start">
+              <a class="navbar-brand">Hỗ trợ</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <input type="checkbox" id="checkbox2">
+                <label for="checkbox2" class="icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </label>  
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page">Đăng ký sản phẩm</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Email cho chúng tôi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Diễn đàn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <nav class="navbar navbar-expand-md col-12 col-md-4">
+            <div class="container-fluid d-md-flex flex-md-column align-items-md-start">
+              <a class="navbar-brand">Tìm hiểu thêm</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <input type="checkbox" id="checkbox3">
+                <label for="checkbox3" class="icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </label>  
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page">Dịch vụ bảo hành</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Dịch vụ sửa chữa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Điều khoản dịch vụ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+
+      <div class="contact container-fluid d-flex flex-column">
+        <div class="row">
+          <h3 class="col-12 text-center mb-3">Liên hệ</h3>
+          <div class="contact-icon col-12 container-fluid">
+            <div class="row">
+              <i class="fa-brands fa-facebook-f col-3 text-center"></i>
+              <i class="fa-brands fa-instagram col-3 text-center"></i>
+              <i class="fa-brands fa-twitter col-3 text-center"></i>
+              <i class="fa-brands fa-pinterest col-3 text-center"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright container-fluid">
+        <div class="row">
+          <p class="text-center">
+            <span><i class="fa-solid fa-earth-asia world"></i></span>
+            <span>Viet Nam</span>
+            <span><i class="fa-solid fa-minus line"></i></span>
+            <span>Việt Nam</span>
+          </p>
+          <p class="text-center">2022 ABC, Inc. All Rights Reserved.</p>
+        </div>
+      </div>
+
+      <div class="scroll-to-top">
+        <button type="button" class="btn">
+          <a href="#"
+            <i class="fa-solid fa-chevron-up"></i>
+          </a>
+        </button>
+      </div>
+      
+    </footer>
+
+    <script src="../Boostrap Files/JS/bootstrap.bundle.min.js"></script>
+    <script src="./product.js"></script>
+    <script src="../assets/base.js"></script>
+
+</body>
+</html>

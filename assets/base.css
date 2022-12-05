@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@200;300;400;500;600;700;800;900&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FDEBD2;
+    --main-color: #16070F;
+    --header-height: 60px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:hsla(217,0%,94%,1);
+    background-image:
+    radial-gradient(at 0% 0%, rgb(203, 195, 255) 0px, transparent 50%),
+    radial-gradient(at 13% 36%, hsla(195,100%,94%,1) 0px, transparent 50%),
+    radial-gradient(at 56% 86%, hsla(11,0%,94%,1) 0px, transparent 50%),
+    radial-gradient(at 69% 44%, hsla(44,100%,83%,1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(204,100%,73%,1) 0px, transparent 50%),
+    radial-gradient(at 95% 5%, hsla(302,81%,90%,1) 0px, transparent 50%);
+}
+
+main {
+    margin-top: var(--header-height);
+}
+
+/* Homepage title */
+h1 {
+    font-family: 'Anybody', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Other pages title */
+h2 {
+    font-family: 'Anybody', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Product title */
+h3 {
+    font-family: 'Anybody', cursive;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Desc */
+h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h5 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h6 {
+    font-family: 'Anybody', cursive;
+    font-weight: 600;
+    margin: 0;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+}
+ a{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+ }
+
+button {
+    border: none;
+}
+
+button, .btn {
+    outline: none;
+    font-family: 'Kanit', sans-serif !important;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+input {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header .navbar {
+    padding: 0;
+}
+
+.header-logo-page {
+    height: 60px;
+    padding: 4px 12px;
+}
+
+.header-search-btn {
+    display: none;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+.header-cart-btn {
+    height: 60px;
+    width: 54px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.header-cart-btn:active {
+    background: var(--main-color);
+    color: white;
+}
+
+.header-cart-btn:hover {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+header .navbar form {
+    margin: 16px 0;
+    padding: 0 12px;
+    display: flex;
+}
+
+header .user {
+    margin: 16px 0 32px 0;
+}
+
+header .navbar .user > .row {
+    align-items: center;
+}
+
+header .navbar .user-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-img img {
+    height: 60px;
+}
+
+.user .user-desc {
+    position: relative;
+}
+
+.user .dropdown {
+    position: absolute;
+    right: 16px;
+    top: 0;
+}
+
+.user .dropdown .dropdown-toggle{
+    border: none;
+    outline: none;
+    transition: .3s;
+}
+
+.user .dropdown-menu {
+    width: 250px;
+    padding: 12px;
+}
+
+.rotate {
+    transform: rotate(-180deg);
+}
+
+.user .dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+.user .dropdown .dropdown-menu {
+    animation: fade .3s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.user .dropdown .dropdown-item {
+    padding: 12px;
+}
+
+.user .dropdown-item i {
+    width: 30px;
+}
+
+header .user-lg-screen {
+    display: none;
+}
+
+header .search-btn {
+    background-color: var(--main-color) !important;
+    color: white !important;
+    width: 130px;
+}
+
+header .navbar-nav .nav-item {
+    padding: 4px 8px;
+    height: 48px;
+    border-top: 0.1px solid rgba(0, 0, 0, 0.2);
+}
+
+header .nav-item .nav-link {
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    color: var(--main-color);
+}
+
+header .nav-item:hover {
+    background: var(--main-color);
+}
+
+header .nav-item:hover .nav-link {
+    color: white;
+}
+
+.cart-modal {
+    margin-top: var(--header-height);
+}
+
+.cart-modal .move-to-cart-btn {
+    background: var(--main-color);
+    color: white;
+}
+
+.toast .toast-header p {
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+footer .container-fluid{
+    background: var(--main-color);
+}
+
+footer .navbar {
+    border-bottom: 1px solid rgb(117, 117, 117);
+}
+
+footer .navbar .container-fluid {
+    padding: 0 16px;
+}
+
+
+footer .navbar .navbar-brand,
+footer .navbar .navbar-nav .nav-link {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    transition: .3s;
+}
+
+footer .navbar .nav-link:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+footer .navbar .navbar-brand {
+    text-transform: uppercase;
+}
+
+footer .navbar-toggler {
+    padding: 0;
+    width: 50px;
+    height: 100%;
+}
+
+footer .navbar-toggler input {
+    display: none;
+}
+
+footer .navbar-toggler label {
+    width: 100%;
+    transition: .3s;
+    color: white;
+}
+
+footer input:checked~label{
+    transform: rotate(-180deg);
+}
+
+footer .contact {
+    color: white;
+    padding: 16px 32px;
+}
+
+footer .contact h3 {
+    font-weight: 300;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+}
+
+footer .contact-icon {
+    width: 60%;
+    max-width: 300px;
+    font-size: 18px;
+}
+
+footer .contact-icon i {
+    transition: .3s;
+}
+
+footer .contact-icon i:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+footer .copyright {
+    color: white;
+    padding: 16px;
+    font-size: 10px;
+}
+
+footer .copyright p {
+    margin: 0;
+    font-size: 12px;
+}
+
+footer .copyright .world {
+    margin-right: 8px;
+}
+
+footer .copyright .line{
+    transform: rotate(90deg);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: .3s;
+}
+
+.scroll-to-top:hover {
+    transform: scale(0.9);
+}
+
+.scroll-to-top .btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgb(57, 57, 57);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    opacity: 0.8;
+}
+
+.scroll-to-top a {
+    height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

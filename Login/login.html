@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Đăng nhập</title>
+      <script src="https://kit.fontawesome.com/19b1e0589b.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="../Boostrap Files/CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="../assets/base.css">
+      <link rel="stylesheet" href="../Login/login.css">
+      <link rel="stylesheet" href="../assets/responsive.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <a href="../index.html">
+                <img class="header-logo-page" src="../assets/img/header-logo.png" alt="">
+              </a>
+              <button class="header-search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              
+              <button type="" class="header-cart-btn" data-bs-toggle="modal" data-bs-target="#cart-modal" data-backdrop="false">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+
+              <div class="user">
+                <div class="row">
+                  <div class="user-img col-3">
+                    <img src="../assets/img/avatar-default.png" alt="">
+                  </div>
+
+                  <div class="user-desc col-9">
+                    <p class="username" style="font-weight: 600;"></p>
+                    <p class="user-level" style="font-weight: 600;">Hạng thành viên: Golden</p>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-angle-down"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                          <a class="dropdown-item profile-detail" href="#">
+                            <i class="fa-regular fa-user"></i>Hồ sơ chi tiết
+                          </a>
+                          </li>
+                        <li>
+                          <a class="dropdown-item switch-account" href="#">
+                            <i class="fa-solid fa-repeat pe-3"></i>Chuyển tài khoản
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item log-out" href="">
+                            <i class="fa-solid fa-power-off pe-3"></i>Đăng xuất
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="user-lg-screen dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-regular fa-user"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end container">
+                  <li class="row">
+                    <div class="user-img col-3">
+                      <img src="../assets/img/avatar-default.png" alt="">
+                    </div>
+                    <div class="user-desc col-9">
+                      <h5 class="username mb-2" style="font-weight: 600;"></h5>
+                      <h5 class="user-level" style="font-weight: 600;">Hạng thành viên: Golden</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item profile-detail" href="#">
+                      <i class="fa-regular fa-user"></i>Hồ sơ chi tiết
+                    </a>
+                    </li>
+                  <li>
+                    <a class="dropdown-item switch-account" href="#">
+                      <i class="fa-solid fa-repeat pe-3"></i>Chuyển tài khoản
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item log-out" href="">
+                      <i class="fa-solid fa-power-off pe-3"></i>Đăng xuất
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <form class="form-search" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                  <button class="btn search-btn" type="submit">Tìm kiếm</button>
+              </form>
+
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Product/product.html">Sản phẩm</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="../News/news.html">Tin tức</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../Contact/contact.html">Liên hệ</a>
+                </li>
+
+                <li class="nav-item login">
+                  <a class="nav-link" href="../Login/login.html">Đăng nhập</a>
+                </li>
+
+                <li class="nav-item signup">
+                  <a class="nav-link" href="../Signup/signup.html">Đăng ký</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </header>
+      <main>
+
+        <div class="modal fade cart-modal" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title fs-4" id="exampleModalLabel">Giỏ hàng</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn move-to-cart-btn">Đến giỏ hàng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="login container-xxl">
+          <div class="row">
+            <div class="login-background col-md-6">
+                  
+            </div>
+
+            <form class="login-form row needs-validation col-md-6" novalidate>
+                <h2 class="text-center">Chào mừng bạn đã quay trở lại.</h2>
+                <div class="col-12">
+                    <button type="button" class="btn login-gg-btn input">
+                        <i class="fa-brands fa-google"></i>
+                        Đăng nhập với Google
+                    </button>
+                </div>
+
+                <div class="or col-12">
+                    <span></span>
+                    <p>or</p>
+                    <span></span>
+                </div>
+                
+                <div class="col-12">
+                  <label for="validationCustom03" class="form-label">Email</label>
+                  <input type="email" class="form-control input email-input" id="validationCustom03" placeholder="Nhập địa chỉ email" autocomplete="off" required>
+                  <div class="invalid-feedback" style="height: 20px; display: block;">
+                  </div>
+                </div>
+                
+                <div class="col-12">
+                  <label for="validationCustom05" class="form-label">Mật khẩu</label>
+                  <input type="password" class="form-control input password-input" id="validationCustom05" placeholder="Nhập mật khẩu" minlength="8" required>
+                  <div class="invalid-feedback" style="height: 20px; display: block;">
+                  </div>
+                </div>
+                <div class="col-12 remember-me">
+                    <div class="row">
+                        <div class="form-check col-6">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                            <label class="form-check-label" for="invalidCheck">
+                              Ghi nhớ tôi
+                            </label>
+                        </div>
+                        <a href="../Recovery/recovery.html" class="col-6">Quên mật khẩu?</a>
+                    </div>
+                  
+                </div>
+                <div class="col-12">
+                  <button class="btn login-btn submit-btn" type="submit">Đăng nhập</button>
+                </div>
+                <a href="../Signup/signup.html" class="signup-link">
+                    <span>Bạn chưa có tài khoản?</span>
+                    <span>Đăng ký ngay</span>
+                </a>
+            </form>
+          </div>
+      </div>
+
+      <button type="button" class="btn btn-primary modal-message-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="display: none;">
+        Launch demo modal
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal message fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Thông báo</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer" style="border: none;">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal" >OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </main>
+
+      <footer class="">
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="navbar navbar-expand-md col-12 col-md-4">
+              <div class="container-fluid d-md-flex flex-md-column align-items-md-start">
+                <a class="navbar-brand">Hệ thống cửa hàng</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <input type="checkbox" id="checkbox1">
+                  <label for="checkbox1" class="icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </label>  
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page">Miền Bắc</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Miền Trung</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Miền Nam</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-md col-12 col-md-4">
+              <div class="container-fluid d-md-flex flex-md-column align-items-md-start">
+                <a class="navbar-brand">Hỗ trợ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <input type="checkbox" id="checkbox2">
+                  <label for="checkbox2" class="icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </label>  
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page">Đăng ký sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Email cho chúng tôi</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Diễn đàn</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-md col-12 col-md-4">
+              <div class="container-fluid d-md-flex flex-md-column align-items-md-start">
+                <a class="navbar-brand">Tìm hiểu thêm</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <input type="checkbox" id="checkbox3">
+                  <label for="checkbox3" class="icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </label>  
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page">Dịch vụ bảo hành</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Dịch vụ sửa chữa</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Điều khoản dịch vụ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+          </div>
+        </div>
+
+        <div class="contact container-fluid d-flex flex-column">
+          <div class="row">
+            <h3 class="col-12 text-center mb-3">Liên hệ</h3>
+            <div class="contact-icon col-12 container-fluid">
+              <div class="row">
+                <i class="fa-brands fa-facebook-f col-3 text-center"></i>
+                <i class="fa-brands fa-instagram col-3 text-center"></i>
+                <i class="fa-brands fa-twitter col-3 text-center"></i>
+                <i class="fa-brands fa-pinterest col-3 text-center"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright container-fluid">
+          <div class="row">
+            <p class="text-center">
+              <span><i class="fa-solid fa-earth-asia world"></i></span>
+              <span>Viet Nam</span>
+              <span><i class="fa-solid fa-minus line"></i></span>
+              <span>Việt Nam</span>
+            </p>
+            <p class="text-center">2022 ABC, Inc. All Rights Reserved.</p>
+          </div>
+        </div>
+
+        <div class="scroll-to-top">
+          <button type="button" class="btn">
+            <a href="#"
+              <i class="fa-solid fa-chevron-up"></i>
+            </a>
+          </button>
+        </div>
+        
+      </footer>
+
+      <script src="../Boostrap Files/JS/bootstrap.bundle.min.js"></script>
+      <script src="../assets/base.js"></script>
+      <script src="../assets/validator.js"></script>
+      <script src="./login.js"></script>
+  </body>
+</html>

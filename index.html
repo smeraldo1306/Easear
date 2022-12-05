@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Trang chủ</title>
+      <script src="https://kit.fontawesome.com/19b1e0589b.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="./Boostrap Files/CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="./Homepage/homepage.css">
+      <link rel="stylesheet" href="./assets/base.css">
+      <link rel="stylesheet" href="./assets/responsive.css">
+  </head>
+  <body>
+  <!-- Header -->
+      <header>
+          <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+              <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <a href="./index.html">
+                    <img class="header-logo-page" src="./assets/img/header-logo.png" alt="">
+                  </a>
+                  <button class="header-search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  
+                  <button type="" class="header-cart-btn" data-bs-toggle="modal" data-bs-target="#cart-modal" data-backdrop="false">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  
+
+                  <div class="user">
+                    <div class="row">
+                      <div class="user-img col-3">
+                        <img src="./assets/img/avatar-default.png" alt="">
+                      </div>
+
+                      <div class="user-desc col-9">
+                        <p class="username" style="font-weight: 600;"></p>
+                        <p class="user-level" style="font-weight: 600;">Hạng thành viên: Golden</p>
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-angle-down"></i>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                              <a class="dropdown-item profile-detail" href="#">
+                                <i class="fa-regular fa-user"></i>Hồ sơ chi tiết
+                              </a>
+                              </li>
+                            <li>
+                              <a class="dropdown-item switch-account" href="#">
+                                <i class="fa-solid fa-repeat pe-3"></i>Chuyển tài khoản
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item log-out" href="">
+                                <i class="fa-solid fa-power-off pe-3"></i>Đăng xuất
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="user-lg-screen dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-regular fa-user"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end container">
+                      <li class="row">
+                        <div class="user-img col-3">
+                          <img src="./assets/img/avatar-default.png" alt="">
+                        </div>
+                        <div class="user-desc col-9">
+                          <h5 class="username mb-2" style="font-weight: 600;"></h5>
+                          <h5 class="user-level" style="font-weight: 600;">Hạng thành viên: Golden</h5>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="dropdown-item profile-detail" href="#">
+                          <i class="fa-regular fa-user"></i>Hồ sơ chi tiết
+                        </a>
+                        </li>
+                      <li>
+                        <a class="dropdown-item switch-account" href="#">
+                          <i class="fa-solid fa-repeat pe-3"></i>Chuyển tài khoản
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item log-out" href="">
+                          <i class="fa-solid fa-power-off pe-3"></i>Đăng xuất
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <form class="form-search" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                      <button class="btn search-btn" type="submit">Tìm kiếm</button>
+                  </form>
+
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./Product/product.html">Sản phẩm</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="./News/news.html">Tin tức</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="./Contact/contact.html">Liên hệ</a>
+                    </li>
+
+                    <li class="nav-item login">
+                      <a class="nav-link" href="./Login/login.html">Đăng nhập</a>
+                    </li>
+
+                    <li class="nav-item signup">
+                      <a class="nav-link" href="./Signup/signup.html">Đăng ký</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </nav>
+      </header>
+
+  <!-- Main -->
+      <main class="">
+
+        <div id="carouselExampleControls" class="discount carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img/Ads/ads-1.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/Ads/ads-2.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/Ads/ads-3.png" class="d-block w-100" alt="">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+
+        <h1 class="best-sale-title text-center d-flex flex-column justify-content-center">Bán chạy nhất</h1>
+
+        <div id="carouselExampleIndicators" class="product-trending carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="product-trending-img col-12 col-md-6">
+                      <img src="./assets/img/Products/Marshall/Monitor-II-ANC.png" alt="">
+                    </div>
+                    <div class="product-trending-info col-12 col-md-6">
+                      <h1 class="product-trending-title">Marshall Monitor II</h1>
+                      <p class="product-trending-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <h2 class="product-trending-price">3.190.900đ</h2>
+                      <div class="product-trending-btn">
+                        <button class="btn btn-buy">Mua ngay</button>
+                        <button class="btn btn-more btn-outline-light">Xem chi tiết</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="product-trending-img col-12 col-md-6">
+                      <img src="./assets/img/Products/ASUS/ROG-Strix-Go.png" alt="">
+                    </div>
+                    <div class="product-trending-info col-12 col-md-6">
+                      <h1 class="product-trending-title"><span>ASUS ROG Strix Go</span></h1>
+                      <p class="product-trending-desc"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span></p>
+                      <h2 class="product-trending-price"><span>1.990.000đ</span></h2>
+                      <div class="product-trending-btn">
+                        <button class="btn btn-buy">Mua ngay</button>
+                        <button class="btn btn-more btn-outline-light">Xem chi tiết</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="product-trending-img col-12 col-md-6">
+                      <img src="./assets/img/Products/SONY/WH-XB910N.png" alt="">
+                    </div>
+                    <div class="product-trending-info col-12 col-md-6">
+                      <h1 class="product-trending-title"><span>SONY WH-XB910N</span></h1>
+                      <p class="product-trending-desc"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span></p>
+                      <h2 class="product-trending-price"><span>4.590.000đ</span></h2>
+                      <div class="product-trending-btn">
+                        <button class="btn btn-buy">Mua ngay</button>
+                        <button class="btn btn-more btn-outline-light">Xem chi tiết</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="product-introduce container-xxl">
+          <div class="product-introduce">
+            <div class="row">
+              <div class="product-introduce-img col-12 col-sm-6">
+                <img src="./assets/img/product-introduce.jpg" alt="">
+              </div>
+              <div class="product-introduce-content col-12 col-sm-6">
+                <h1 class="product-introduce-title">Trải nghiệm âm thanh sống động</h1>
+                <h4 class="product-introduce-desc">Chúng tôi mang đến cho bạn những thiết bị chất lượng cao với mức giá ưu đãi.</h4>
+                <button class="product-introduce-btn btn">
+                   <a href="./Product/product.html">Khám phá ngay</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-introduce container-xxl">
+          <div class="news-introduce">
+            <div class="row">
+              <div class="news-introduce-img col-12 col-sm-6">
+                <img src="./assets/img/news-introduce.jpg" alt="">
+              </div>
+              <div class="news-introduce-content col-12 col-sm-6">
+                <h1 class="news-introduce-title">Tin tức mới nhất về công nghệ</h1>
+                <h4 class="news-introduce-desc">Bắt kịp xu hướng công nghệ trên toàn thế giới.</h4>
+                <button class="news-introduce-btn btn">
+                  <a href="./News/news.html">Khám phá ngay</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="receive-information container-fluid">
+            <div class="row">
+              <h1 class="text-center">Đặt chất lượng lên hàng đầu</h1>
+              <p class="text-center">Nhận thông tin về sản phẩm và các ưu đãi mới nhất qua hộp thư email của bạn.</p>
+              <form action="" class="text-center">
+                <input type="text" placeholder="Địa chỉ email của bạn">
+                <button class="">Đăng ký</button>
+              </form>
+          </div>
+        </div>
+
+        <div class="modal fade cart-modal" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title fs-4" id="exampleModalLabel">Giỏ hàng</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn move-to-cart-btn">Đến giỏ hàng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-to-top">
+          <button type="button" class="btn">
+            <a href="#"
+              <i class="fa-solid fa-chevron-up"></i>
+            </a>
+          </button>
+        </div>
+
+      </main>
+
+  <!-- Footer -->
+      <footer class="">
+          <div class="container-fluid">
+            <div class="row">
+              <nav class="navbar navbar-expand-md col-12 col-md-4">
+                <div class="container-fluid d-md-flex flex-md-column align-items-md-start">
+                  <a class="navbar-brand">Hệ thống cửa hàng</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1" class="icon">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </label>  
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page">Miền Bắc</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Miền Trung</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Miền Nam</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+              <nav class="navbar navbar-expand-md col-12 col-md-4">
+                <div class="container-fluid d-md-flex flex-md-column align-items-md-start">
+                  <a class="navbar-brand">Hỗ trợ</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2" class="icon">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </label>  
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page">Đăng ký sản phẩm</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Email cho chúng tôi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Diễn đàn</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+              <nav class="navbar navbar-expand-md col-12 col-md-4">
+                <div class="container-fluid d-md-flex flex-md-column align-items-md-start">
+                  <a class="navbar-brand">Tìm hiểu thêm</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3" class="icon">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </label>  
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page">Dịch vụ bảo hành</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Dịch vụ sửa chữa</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Điều khoản dịch vụ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+            </div>
+          </div>
+
+          <div class="contact container-fluid d-flex flex-column">
+            <div class="row">
+              <h3 class="col-12 text-center mb-3">Liên hệ</h3>
+              <div class="contact-icon col-12 container-fluid">
+                <div class="row">
+                  <i class="fa-brands fa-facebook-f col-3 text-center"></i>
+                  <i class="fa-brands fa-instagram col-3 text-center"></i>
+                  <i class="fa-brands fa-twitter col-3 text-center"></i>
+                  <i class="fa-brands fa-pinterest col-3 text-center"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="copyright container-fluid">
+            <div class="row">
+              <p class="text-center">
+                <span><i class="fa-solid fa-earth-asia world"></i></span>
+                <span>Viet Nam</span>
+                <span><i class="fa-solid fa-minus line"></i></span>
+                <span>Việt Nam</span>
+              </p>
+              <p class="text-center">2022 ABC, Inc. All Rights Reserved.</p>
+            </div>
+          </div>
+      </footer>
+
+      <script src="./Boostrap Files/JS/bootstrap.bundle.min.js"></script>
+      <script src="./Homepage/hompage.js"></script>
+      
+  </body>
+</html>

@@ -1,0 +1,116 @@
+h5 {
+    font-family: 'Anybody', cursive;
+    font-weight: 700;
+}
+
+main {
+    margin-top: var(--header-height);
+}
+
+.news-header .navigation-btn{
+    width: 90%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 100px;
+    padding: 4px;
+
+}
+.news-header .navigation-btn .btn {
+    width: calc(100% / 3);
+    border-radius: 100px !important;
+    outline: none;
+    border: none;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: .2s ease-in;
+}
+
+.news-header .navigation-btn .btn:hover {
+    color: #ccc;
+}
+
+.news-header .navigation-btn .btn-check:checked+.btn{
+    background: black;
+    color: white;
+}
+
+.news-header .news-slider {
+    height: 100vw;
+}
+
+.news-header .news-slider .carousel-inner {
+    height: 100%;
+}
+
+.news-header .news-slider .carousel-item{
+    padding: 8px;
+    height: 100%;
+}
+
+.news-header .news-slider .carousel-item img {
+    position: relative;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(40%) blur(1px);
+}
+
+.news-header .news-slider .carousel-caption h5 {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+
+.news-header .news-slider .carousel-control-prev {
+    margin-left: 14px;
+}
+
+.news-header .news-slider .carousel-control-next {
+    margin-right: 16px;
+}
+
+.news-body {
+    padding: 16px;
+}
+
+.news-body .news-item {
+    border-radius: 10px;
+    margin-bottom: 16px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.news-body .news-item .news-item-title {
+    display: flex;
+    align-items: center;
+}
+
+.news-body .news-item .news-item-title > .row {
+    row-gap: 16px;
+}
+
+.news-item-title .time {
+    font-weight: 600;
+    padding: 0;
+}
+
+.news-body .news-item .news-item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-body .news-item .news-item-img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+    border-radius: 8px;
+    height: 250px;
+}
+
+.news-body .news-item .news-item-title .row {
+    align-items: center;
+}
