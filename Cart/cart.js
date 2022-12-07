@@ -94,8 +94,8 @@ checkoutConfirmBtn.addEventListener("click", function () {
     toastBody.innerHTML = `<p>Đặt hàng thành công</p>`
     toast.show();
     setTimeout(function() {
-        window.close();
-    }, 1500)
+        window.location.assign('../index.html');
+    }, 1500);
 
 })
 

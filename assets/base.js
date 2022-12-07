@@ -2,6 +2,7 @@ var isLogin = localStorage.getItem("isLogin");
 const user = document.querySelector(".user");
 const userLgScreen = document.querySelector(".user-lg-screen");
 const dropdownBtn = user.querySelector(".dropdown-toggle");
+const footerDropdownBtn = document.querySelectorAll("footer .navbar-toggler");
 const loginItem = document.querySelector(".navbar .login");
 const signUpItem = document.querySelector(".navbar .signup");
 const moveToProfilePage = document.querySelectorAll(".profile-detail");
@@ -52,6 +53,14 @@ if(dropdownBtn) {
     })
 }
 
+if(footerDropdownBtn) {
+    footerDropdownBtn.forEach(function(btn) {
+        btn.addEventListener("click", function () {
+            btn.classList.toggle("rotate");
+        })
+    })
+}
+
 // localStorage.setItem("isLogin", false);
 if(moveToProfilePage) {
     for(i of moveToProfilePage) {
@@ -71,12 +80,12 @@ if(switchAccountBtn) {
 }
 
 if(logOutBtn) {
-    for(i of logOutBtn) {
-        i.addEventListener("click", function () {
+    logOutBtn.forEach(function(btn) {
+        btn.addEventListener("click", function () {
             localStorage.setItem("isLogin", false);
-            window.location.assign("../index.html");
+            window.location.reload();
         })
-    }
+    })
 }
 
 // Chuyển hướng đến trang giỏ hàng
@@ -127,3 +136,6 @@ headerFormSearch.addEventListener("submit", function () {
 })
 
 
+window.onstorage = function() {
+    location.reload();
+};

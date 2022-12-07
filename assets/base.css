@@ -16,9 +16,9 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color:hsla(217,0%,94%,1);
-    background-image:
+main {
+    margin-top: var(--header-height);
+    background:
     radial-gradient(at 0% 0%, rgb(203, 195, 255) 0px, transparent 50%),
     radial-gradient(at 13% 36%, hsla(195,100%,94%,1) 0px, transparent 50%),
     radial-gradient(at 56% 86%, hsla(11,0%,94%,1) 0px, transparent 50%),
@@ -27,11 +27,6 @@ body {
     radial-gradient(at 95% 5%, hsla(302,81%,90%,1) 0px, transparent 50%);
 }
 
-main {
-    margin-top: var(--header-height);
-}
-
-/* Homepage title */
 h1 {
     font-family: 'Anybody', cursive;
     font-weight: 700;
@@ -39,7 +34,6 @@ h1 {
     margin: 0;
 }
 
-/* Other pages title */
 h2 {
     font-family: 'Anybody', cursive;
     font-weight: 700;
@@ -47,14 +41,12 @@ h2 {
     margin: 0;
 }
 
-/* Product title */
 h3 {
     font-family: 'Anybody', cursive;
     font-weight: 700;
     margin: 0;
 }
 
-/* Desc */
 h4 {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
@@ -79,20 +71,27 @@ p {
     font-size: 1rem;
     margin: 0;
 }
- a{
+
+a {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
- }
-
-button {
-    border: none;
 }
+
 
 button, .btn {
     outline: none;
     font-family: 'Kanit', sans-serif !important;
     font-weight: 400;
     font-size: 1rem;
+    transition: .25s !important;
+}
+
+button:hover , .btn:hover {
+    transform: scale(0.95);
+}
+
+button:focus, .btn:focus {
+    box-shadow: none !important;
 }
 
 input {
@@ -114,12 +113,12 @@ header .navbar {
     display: none;
 }
 
-.navbar-toggler {
+header .navbar-toggler {
     border: none;
     outline: none;
 }
 
-.navbar-toggler:focus {
+header .navbar-toggler:focus {
     box-shadow: none;
 }
 
@@ -141,11 +140,6 @@ header .navbar {
 .header-cart-btn:active {
     background: var(--main-color);
     color: white;
-}
-
-.header-cart-btn:hover {
-    transform: scale(0.95);
-    opacity: 0.8;
 }
 
 header .navbar form {
@@ -185,7 +179,6 @@ header .navbar .user-img {
 .user .dropdown .dropdown-toggle{
     border: none;
     outline: none;
-    transition: .3s;
 }
 
 .user .dropdown-menu {
@@ -194,7 +187,7 @@ header .navbar .user-img {
 }
 
 .rotate {
-    transform: rotate(-180deg);
+    transform: rotate(-180deg) !important;
 }
 
 .user .dropdown .dropdown-toggle::after {
@@ -245,7 +238,7 @@ header .nav-item .nav-link {
 }
 
 header .nav-item:hover {
-    background: var(--main-color);
+    background-color: var(--main-color);
 }
 
 header .nav-item:hover .nav-link {
@@ -268,7 +261,7 @@ header .nav-item:hover .nav-link {
 }
 
 footer .container-fluid{
-    background: var(--main-color);
+    background-color: var(--main-color);
 }
 
 footer .navbar {
@@ -279,7 +272,6 @@ footer .navbar .container-fluid {
     padding: 0 16px;
 }
 
-
 footer .navbar .navbar-brand,
 footer .navbar .navbar-nav .nav-link {
     color: white;
@@ -287,11 +279,13 @@ footer .navbar .navbar-nav .nav-link {
     font-size: 18px;
     font-weight: 300;
     transition: .3s;
+    height: 40px;
+    cursor: pointer;
 }
 
 footer .navbar .nav-link:hover {
-    cursor: pointer;
-    transform: scale(0.95);
+    transform: scale(0.98);
+    opacity: 0.8;
 }
 
 footer .navbar .navbar-brand {
@@ -302,20 +296,7 @@ footer .navbar-toggler {
     padding: 0;
     width: 50px;
     height: 100%;
-}
-
-footer .navbar-toggler input {
-    display: none;
-}
-
-footer .navbar-toggler label {
-    width: 100%;
-    transition: .3s;
     color: white;
-}
-
-footer input:checked~label{
-    transform: rotate(-180deg);
 }
 
 footer .contact {
@@ -332,7 +313,7 @@ footer .contact h3 {
 footer .contact-icon {
     width: 60%;
     max-width: 300px;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 footer .contact-icon i {
@@ -341,7 +322,7 @@ footer .contact-icon i {
 
 footer .contact-icon i:hover {
     cursor: pointer;
-    transform: scale(0.95);
+    transform: scale(0.9);
 }
 
 footer .copyright {
@@ -367,7 +348,7 @@ footer .copyright .line{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000;
+    z-index: 9999;
     transition: .3s;
 }
 
@@ -394,5 +375,4 @@ footer .copyright .line{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }

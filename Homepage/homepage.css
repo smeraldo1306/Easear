@@ -111,7 +111,7 @@
 
 .product-trending-info .product-trending-btn .btn{
     text-transform: uppercase;
-    width: 145px;
+    width: 135px;
 }
 
 .product-trending-btn .btn-buy {
@@ -234,13 +234,9 @@
     color: white;
     border-radius: 100px;
     font-size: 16px;
-    transition: .3s;
+    border: none;
 }
 
-.receive-information form button:hover {
-    transform: scale(0.95);
-    opacity: 0.9;
-}
 
 
 

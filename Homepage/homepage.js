@@ -2,6 +2,7 @@ var isLogin = localStorage.getItem("isLogin");
 const user = document.querySelector(".user");
 const userLgScreen = document.querySelector(".user-lg-screen");
 const dropdownBtn = user.querySelector(".dropdown-toggle");
+const footerDropdownBtn = document.querySelectorAll("footer .navbar-toggler");
 const loginItem = document.querySelector(".navbar .login");
 const signUpItem = document.querySelector(".navbar .signup");
 const moveToProfilePage = document.querySelectorAll(".profile-detail");
@@ -49,6 +50,14 @@ if(isLogin == "true") {
 if(dropdownBtn) {
     dropdownBtn.addEventListener("click", function () {
         dropdownBtn.classList.toggle("rotate");
+    })
+}
+
+if(footerDropdownBtn) {
+    footerDropdownBtn.forEach(function(btn) {
+        btn.addEventListener("click", function () {
+            btn.classList.toggle("rotate");
+        })
     })
 }
 
@@ -125,5 +134,10 @@ headerFormSearch.addEventListener("submit", function () {
     localStorage.setItem("SearchingInput", headerFormSearchInput.value);
     window.open("./Search/search.html", '_blank');
 })
+
+window.onstorage = function() {
+    location.reload();
+};
+
 
 

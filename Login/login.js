@@ -1,7 +1,7 @@
 var listAccount = [
     {
         username: "admin1@gmail.com",
-        password: "epiphany"
+        password: "13062013"
     },
     {
         username: "admin2@gmail.com",

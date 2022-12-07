@@ -57,7 +57,7 @@
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item log-out" href="">
+                        <a class="dropdown-item log-out" href="../index.html">
                           <i class="fa-solid fa-power-off pe-3"></i>Đăng xuất
                         </a>
                       </li>
@@ -92,7 +92,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item log-out" href="">
+                  <a class="dropdown-item log-out" href="../index.html">
                     <i class="fa-solid fa-power-off pe-3"></i>Đăng xuất
                   </a>
                 </li>
@@ -134,7 +134,7 @@
   </header>
 
   <!-- Main -->
-    <main class="profile-detail-container container">
+    <main class="container-fluid">
       <div class="modal fade cart-modal" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content">
@@ -154,7 +154,7 @@
           </div>
         </div>
       </div>
-      
+    <div class="profile-detail-container container">
       <form class="row">
         <div class="profile-img col-12">
             <img src="../assets/img/img1.jpg" alt="">
@@ -238,6 +238,7 @@
         </div>
 
       </form>
+    </div> 
       <button type="button" class="btn btn-primary modal-message-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="display: none;">
         Launch demo modal
       </button>
@@ -269,10 +270,7 @@
           <div class="container-fluid d-md-flex flex-md-column align-items-md-start">
             <a class="navbar-brand">Hệ thống cửa hàng</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <input type="checkbox" id="checkbox1">
-              <label for="checkbox1" class="icon">
-                <i class="fa-solid fa-chevron-down"></i>
-              </label>  
+              <i class="fa-solid fa-chevron-down"></i>  
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
@@ -294,10 +292,7 @@
           <div class="container-fluid d-md-flex flex-md-column align-items-md-start">
             <a class="navbar-brand">Hỗ trợ</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <input type="checkbox" id="checkbox2">
-              <label for="checkbox2" class="icon">
-                <i class="fa-solid fa-chevron-down"></i>
-              </label>  
+              <i class="fa-solid fa-chevron-down"></i>  
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
@@ -318,12 +313,11 @@
         <nav class="navbar navbar-expand-md col-12 col-md-4">
           <div class="container-fluid d-md-flex flex-md-column align-items-md-start">
             <a class="navbar-brand">Tìm hiểu thêm</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <input type="checkbox" id="checkbox3">
-              <label for="checkbox3" class="icon">
-                <i class="fa-solid fa-chevron-down"></i>
-              </label>  
+              <i class="fa-solid fa-chevron-down"></i>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
                 <li class="nav-item">
@@ -337,6 +331,7 @@
                 </li>
               </ul>
             </div>
+            
           </div>
         </nav>
 
@@ -379,11 +374,9 @@
     
   </footer>
 
-
-
-    <script src="../Boostrap Files/JS/bootstrap.bundle.min.js"></script>
-    <script src="../assets/base.js"></script>
-    <script src="./profile.js"></script>
+  <script src="../Boostrap Files/JS/bootstrap.bundle.min.js"></script>
+  <script src="../assets/base.js"></script>
+  <script src="./profile.js"></script>
 
   </body>
 </html>

@@ -370,6 +370,7 @@ filterForm.addEventListener("submit", (e) => {
 clearFilterBtn.addEventListener("click", function() {
     showItemDefault();
     filterBtnClose.click();
+    window.location.reload();
 })
 // Xử lí lọc
 function filterSelected() {
@@ -552,7 +553,6 @@ addToCartForm.forEach((form) => {
     }
 )
 
-// localStorage.clear()
 
 
 

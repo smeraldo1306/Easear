@@ -1,3 +1,7 @@
+h6 {
+    font-size: 20px;
+}
+
 main {
     margin-top: var(--header-height);
 }
@@ -11,6 +15,7 @@ main {
     background: white;
     border-radius: 10px;
     padding: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .cart .cart-items .cart-item-img {
@@ -22,8 +27,9 @@ main {
 
 .cart .cart-items .cart-item-img img{
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
+    max-height: 140px;
 }
 
 .cart .cart-items .cart-item-btn {
@@ -54,12 +60,13 @@ main {
     border-radius: 50%;
     background: #dadada;
     font-size: 12px;
+    border: none;
 }
 
 .cart .cart-items .cart-item-info {
     display: flex;
     flex-direction: column;
-    row-gap: 8px;
+    row-gap: 12px;
 }
 
 .delivery .delivery-info {
@@ -72,6 +79,7 @@ main {
     border-radius: 10px;
     margin: 0;
     padding: 8px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     gap: 16px;
 }
 
@@ -87,10 +95,12 @@ main {
 .payment-method .payment-select {
     border-radius: 10px;
     padding: 8px 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background: white;
 }
 
 .payment-method label {
+    cursor: pointer;
     display: flex;
     justify-content: flex-start;
     column-gap: 16px;
@@ -123,6 +133,7 @@ main {
     padding: 12px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     row-gap: 12px;
 }
 
@@ -145,6 +156,7 @@ main {
 
 .checkout-confirm .total-item {
     font-weight: 600;
+    padding: 0;
 }
 
 .checkout-confirm .checkout-confirm-btn {
@@ -185,4 +197,10 @@ main {
 
 .toast-container {
     top: var(--header-height);
+}
+
+@media (max-width: 1499px) {
+    .scroll-to-top {
+        bottom: 150px;
+    }
 }

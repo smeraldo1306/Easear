@@ -780,7 +780,10 @@ addToCartForm.addEventListener("click", function() {
         liveToast.style.border = "1px solid green";
         liveToast.style.background = "rgba(209, 231, 221, 0.9)";
         toastBody.innerHTML = `<p>Thêm thành công sản phẩm ${itemSelected.model} vào giỏ hàng</p>`
-        toast.show()
+        toast.show();
+        setTimeout(function() {
+            window.location.reload();
+        }, 1500);
     }
     else {
         const toast = new bootstrap.Toast(liveToast);

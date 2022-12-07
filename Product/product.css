@@ -1,49 +1,10 @@
-h5 {
+main h5 {
     font-family: 'Anybody', cursive;
     font-weight: 700;
 }
 
 main {
     margin-top: var(--header-height);
-}
-
-.category .category-list {
-    padding-top: 0;
-}
-
-.category .category-list .category-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 10px;
-    border: 2px solid white;
-}
-
-.category .category-list .category-item:hover img {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.category-list .category-item img {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-    object-fit: contain;
-    object-position: center;
-    transition: .5s;
-}
-
-.category-list .category-item p {
-    font-size: 14px;
-}
-
-.category-list .category-item p,
-.category-list .category-item h5 {
-    margin-top: 10px;
-    margin-bottom: 0;
-    font-weight: 500;
 }
 
 .flash-sale > .row {
@@ -110,6 +71,7 @@ main {
     justify-content: flex-end;
     align-items: center;
     background: none;
+    border: none;
 }
 
 .all-product .show-filter {
@@ -167,6 +129,7 @@ main {
     outline: none;
     box-shadow: none;
     border: 1px solid var(--main-color);
+    cursor: pointer;
 }
 
 .filter .check-box input:checked {
@@ -178,6 +141,7 @@ main {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 16px;
     margin: 8px 0;
+    cursor: pointer;
 }
 
 .filter .filter-btn .row {

@@ -1,4 +1,4 @@
-h5 {
+main h5 {
     font-family: 'Anybody', cursive;
     font-weight: 700;
 }
@@ -80,6 +80,7 @@ main {
     margin-bottom: 16px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .news-body .news-item .news-item-title {

@@ -13,7 +13,7 @@ contactForm.addEventListener("submit", function (e) {
         modalMessageBtn.click();
         setTimeout(function() {
             contactForm.submit();
-            window.location.assign("/index.html");
+            window.location.assign("../index.html");
         }, 1500); 
     }
 })

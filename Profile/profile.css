@@ -3,8 +3,13 @@ main i {
     display: flex !important;
     justify-content: center;
     align-items: center;
+    transition: .3s;
 }
 
+i:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
 
 .profile-img {
     display: flex;
@@ -15,8 +20,8 @@ main i {
 }
 
 .profile-img img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--main-color);
@@ -38,7 +43,7 @@ main i {
     background: white;
     padding: 12px;
     margin-bottom: 16px;
-    border: 1px solid var(--main-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .profile-item p {
@@ -48,6 +53,12 @@ main i {
 .profile-item h5 {
     font-weight: 700;
     color: var(--main-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile-item > .row > .col-10 {
+    border-left: 1px solid gray;
 }
 
 .profile-item label {
@@ -56,6 +67,7 @@ main i {
 
 .profile-item label i {
     color: #888;
+    transition: .3s;
 }
 
 .profile-item input {
@@ -66,7 +78,6 @@ main i {
 }
 
 .profile-item > .row > i {
-    border-right: 1px solid gray;
     font-size: 20px;
 }
 
