@@ -1,5 +1,6 @@
 var listItem = [
-    {   id: 1,
+    {
+        id: 1,
         brand: 'Marshall',
         photo: '../assets/img/Products/Marshall/Motif-ANC.png',
         model: 'Marshal Motif A.N.C',
@@ -10,7 +11,8 @@ var listItem = [
         rate: 4,
         discount: 0.2
     },
-    {   id: 2,
+    {
+        id: 2,
         brand: 'SONY',
         photo: '../assets/img/Products/SONY/XBA-N1AP.png',
         model: 'SONY XBA-N1AP',
@@ -21,7 +23,8 @@ var listItem = [
         rate: 3.9,
         discount: 0.25
     },
-    {   id: 3,
+    {
+        id: 3,
         brand: 'Apple',
         photo: '../assets/img/Products/Apple/AirPods-Max.png',
         model: 'Apple AirPods Max',
@@ -32,7 +35,8 @@ var listItem = [
         rate: 4.2,
         discount: 0.35
     },
-    {   id: 4,
+    {
+        id: 4,
         brand: 'ASUS',
         photo: '../assets/img/Products/ASUS/ROG-Cetra-True-Wireless.png',
         model: 'ASUS ROG Cetra True Wireless',
@@ -43,7 +47,8 @@ var listItem = [
         rate: 4.9,
         discount: 0
     },
-    {   id: 5,
+    {
+        id: 5,
         brand: 'JBL',
         photo: '../assets/img/Products/JBL/Quantum-400.png',
         model: 'JBL Quantum 400',
@@ -54,7 +59,8 @@ var listItem = [
         rate: 4.5,
         discount: 0.15
     },
-    {   id: 6,
+    {
+        id: 6,
         brand: 'JBL',
         photo: '../assets/img/Products/JBL/T500BT.png',
         model: 'JBL T500BT',
@@ -65,7 +71,8 @@ var listItem = [
         rate: 3.5,
         discount: 0.1
     },
-    {   id: 7,
+    {
+        id: 7,
         brand: 'KZ',
         photo: '../assets/img/Products/KZ/EDX-Pro.png',
         model: 'KZ EDX Pro',
@@ -76,7 +83,8 @@ var listItem = [
         rate: 2.5,
         discount: 0
     },
-    {   id: 8,
+    {
+        id: 8,
         brand: 'Marshall',
         photo: '../assets/img/Products/Marshall/Minor-III.png',
         model: 'Marshall Minor III Black',
@@ -87,7 +95,8 @@ var listItem = [
         rate: 4.2,
         discount: 0
     },
-    {   id: 9,
+    {
+        id: 9,
         brand: 'Apple',
         photo: '../assets/img/Products/Apple/EarPods-Lightning.png',
         model: 'Apple EarPods Lightning',
@@ -98,7 +107,8 @@ var listItem = [
         rate: 4,
         discount: 0.15
     },
-    {   id: 10,
+    {
+        id: 10,
         brand: 'SONY',
         photo: '../assets/img/Products/SONY/WH-XB910N.png',
         model: 'SONY WH-XB910N',
@@ -109,7 +119,8 @@ var listItem = [
         rate: 4.6,
         discount: 0.3
     },
-    {   id: 11,
+    {
+        id: 11,
         brand: 'ASUS',
         photo: '../assets/img/Products/ASUS/TUF-H3.png',
         model: 'ASUS TUF H3',
@@ -120,7 +131,8 @@ var listItem = [
         rate: 5,
         discount: 0.1
     },
-    {   id: 12,
+    {
+        id: 12,
         brand: 'SONY',
         photo: '../assets/img/Products/SONY/MDR-1AM2.png',
         model: 'SONY MDR-1AM2',
@@ -131,7 +143,8 @@ var listItem = [
         rate: 5,
         discount: 0.3
     },
-    {   id: 13,
+    {
+        id: 13,
         brand: 'KZ',
         photo: '../assets/img/Products/KZ/ZSN-Pro-X.png',
         model: 'KZ ZSN Pro X',
@@ -142,7 +155,8 @@ var listItem = [
         rate: 5,
         discount: 0
     },
-    {   id: 14,
+    {
+        id: 14,
         brand: 'ASUS',
         photo: '../assets/img/Products/ASUS/ROG-Strix-Go.png',
         model: 'ASUS ROG Strix Go',
@@ -153,7 +167,8 @@ var listItem = [
         rate: 4.1,
         discount: 0
     },
-    {   id: 15,
+    {
+        id: 15,
         brand: 'Marshall',
         photo: '../assets/img/Products/Marshall/Major-IV.png',
         model: 'Marshall Major IV Brown',
@@ -164,7 +179,8 @@ var listItem = [
         rate: 4.7,
         discount: 0.15
     },
-    {   id: 16,
+    {
+        id: 16,
         brand: 'Marshall',
         photo: '../assets/img/Products/Marshall/Mode-EQ.png',
         model: 'Marshall Mode EQ',
@@ -175,7 +191,8 @@ var listItem = [
         rate: 3.7,
         discount: 0.1
     },
-    {   id: 17,
+    {
+        id: 17,
         brand: 'JBL',
         photo: '../assets/img/Products/JBL/Quantum-50.png',
         model: 'JBL Quantum 50',
@@ -186,7 +203,8 @@ var listItem = [
         rate: 3.6,
         discount: 0
     },
-    {   id: 18,
+    {
+        id: 18,
         brand: 'JBL',
         photo: '../assets/img/Products/JBL/T600BTNC.png',
         model: 'JBL T600BTNC',
@@ -197,7 +215,8 @@ var listItem = [
         rate: 5,
         discount: 0
     },
-    {   id: 19,
+    {
+        id: 19,
         brand: 'Apple',
         photo: '../assets/img/Products/Apple/AirPods-Pro.png',
         model: 'Apple AirPods Pro',
@@ -208,7 +227,8 @@ var listItem = [
         rate: 4.3,
         discount: 0.25
     },
-    {   id: 20,
+    {
+        id: 20,
         brand: 'SONY',
         photo: '../assets/img/Products/SONY/WI-C100.png',
         model: 'SONY WI-C100',
@@ -219,7 +239,8 @@ var listItem = [
         rate: 4.4,
         discount: 0
     },
-    {   id: 21,
+    {
+        id: 21,
         brand: 'Marshall',
         photo: '../assets/img/Products/Marshall/Monitor-II-ANC.png',
         model: 'Marshall Monitor II A.N.C',
@@ -230,7 +251,8 @@ var listItem = [
         rate: 3.2,
         discount: 0.1
     },
-    {   id: 22,
+    {
+        id: 22,
         brand: 'ASUS',
         photo: '../assets/img/Products/ASUS/ROG-Cetra-2-Core.png',
         model: 'ASUS ROG Cetra 2 Core',
@@ -241,7 +263,8 @@ var listItem = [
         rate: 4.8,
         discount: 0.1
     },
-    {   id: 23,
+    {
+        id: 23,
         brand: 'SONY',
         photo: '../assets/img/Products/SONY/MDR-ZX110AP.png',
         model: 'SONY MDR-ZX110AP',
@@ -268,32 +291,32 @@ const flashSaleList = document.querySelector(".flash-sale .flash-sale-list");
 
 //Dếm ngược flash sale
 function CountDownTimer() {
-    var countDownDate = new Date("Dec 14, 2022 00:00:00").getTime();
-    var x = setInterval(function() {
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-    countDown.innerHTML = "Kết thúc sau " + days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-        
-    if (distance < 0) {
-        clearInterval(x);
-        countDown.innerHTML = "Đã kết thúc";
-    }
+    var countDownDate = new Date("Dec 20, 2022 00:00:00").getTime();
+    var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countDown.innerHTML = "Kết thúc sau " + days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
+        if (distance < 0) {
+            clearInterval(x);
+            countDown.innerHTML = "Đã kết thúc";
+        }
     }, 1000);
 }
 CountDownTimer();
-    
+
 // Hiển thị các sản phẩm mặc định khi trang reload
 function showItemDefault() {
     filterResultTitle.innerHTML = `Tất cả sản phẩm (${listItem.length})`;
     flashSaleList.innerHTML = '';
     allProductItem.innerHTML = '';
 
-    for(let i = 0; i < listItem.length; i++) {
+    for (let i = 0; i < listItem.length; i++) {
         brand = listItem[i].brand;
         photo = listItem[i].photo;
         model = listItem[i].model;
@@ -305,7 +328,7 @@ function showItemDefault() {
         discount = listItem[i].discount;
         newPrice = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price * (1 - discount));
 
-        if(discount > 0) {
+        if (discount > 0) {
             flashSaleList.innerHTML += `
             <div class="flash-sale-item">
                 <p class="id" id="${i}" style="display: none;"></p>
@@ -318,7 +341,7 @@ function showItemDefault() {
                     <h5 class="price">${newPrice}</h5>
                     <p class="text-decoration-line-through ms-2">${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(listItem[i].price)}</p>
                 </div>
-                <div class="percent-discount"><p>-${new Intl.NumberFormat('en-US', {style: 'percent'}).format(discount)}</p></div>
+                <div class="percent-discount"><p>-${new Intl.NumberFormat('en-US', { style: 'percent' }).format(discount)}</p></div>
                 <form action="" class="add-to-cart-form" id="liveToastBtn">
                     <button type="button" class="btn btn-outline-dark add-to-cart-btn">Thêm vào giỏ hàng</button>
                 </form>
@@ -344,7 +367,7 @@ function showItemDefault() {
 showItemDefault();
 
 // Cuộn ngang danh sách flash sale
-flashSaleList.addEventListener("wheel", function(e) {
+flashSaleList.addEventListener("wheel", function (e) {
     e.preventDefault();
     flashSaleList.scrollLeft += 0.4 * e.deltaY;
 });
@@ -352,8 +375,8 @@ flashSaleList.addEventListener("wheel", function(e) {
 // Lưu thông tin sản phẩm vào session storage để đưa vào trang chi tiết
 function renderDetailPage() {
     var productItems = allProductItem.querySelectorAll(".product-item-container .product-item");
-    productItems.forEach(function(item) {
-        item.addEventListener("click", function() {
+    productItems.forEach(function (item) {
+        item.addEventListener("click", function () {
             var itemClicked = item.id;
             sessionStorage.setItem("Clicked", itemClicked);
             window.open("../Product Detail/productDetail.html", '_blank');
@@ -367,7 +390,7 @@ filterForm.addEventListener("submit", (e) => {
     e.preventDefault();
 })
 
-clearFilterBtn.addEventListener("click", function() {
+clearFilterBtn.addEventListener("click", function () {
     showItemDefault();
     filterBtnClose.click();
     window.location.reload();
@@ -377,8 +400,8 @@ function filterSelected() {
     //Select by category (form)
     var categoryCheckboxForm = document.querySelectorAll(".filter .category-checkbox-type");
     var categoryTypeSelected = [];
-    for(let i = 0; i < categoryCheckboxForm.length; i++) {
-        if(categoryCheckboxForm[i].checked == true) {
+    for (let i = 0; i < categoryCheckboxForm.length; i++) {
+        if (categoryCheckboxForm[i].checked == true) {
             categoryTypeSelected.push(categoryCheckboxForm[i].value);
         }
     }
@@ -386,8 +409,8 @@ function filterSelected() {
     //Select by category (wireless)
     var categoryCheckboxConnection = document.querySelectorAll(".filter .category-checkbox-connection");
     var categoryConnectionSelected = [];
-    for(let i = 0; i < categoryCheckboxConnection.length; i++) {
-        if(categoryCheckboxConnection[i].checked == true) {
+    for (let i = 0; i < categoryCheckboxConnection.length; i++) {
+        if (categoryCheckboxConnection[i].checked == true) {
             categoryConnectionSelected.push(categoryCheckboxConnection[i].value);
         }
     }
@@ -395,8 +418,8 @@ function filterSelected() {
     //Select by category (gaming)
     var categoryCheckboxGaming = document.querySelectorAll(".filter .category-checkbox-gaming");
     var categoryGamingSelected = [];
-    for(let i = 0; i < categoryCheckboxGaming.length; i++) {
-        if(categoryCheckboxGaming[i].checked == true) {
+    for (let i = 0; i < categoryCheckboxGaming.length; i++) {
+        if (categoryCheckboxGaming[i].checked == true) {
             categoryGamingSelected.push(categoryCheckboxGaming[i].value);
         }
     }
@@ -404,8 +427,8 @@ function filterSelected() {
     //Select by brand
     var brandCheckbox = document.querySelectorAll(".filter .brand-checkbox");
     var brandSelected = [];
-    for(let i = 0; i < brandCheckbox.length; i++) {
-        if(brandCheckbox[i].checked == true) {
+    for (let i = 0; i < brandCheckbox.length; i++) {
+        if (brandCheckbox[i].checked == true) {
             brandSelected.push(brandCheckbox[i].value);
         }
     }
@@ -413,8 +436,8 @@ function filterSelected() {
     //Selected by price
     var priceCheckbox = document.querySelectorAll(".filter .price-checkbox");
     var priceSelected = [];
-    for(let i = 0; i < priceCheckbox.length; i++) {
-        if(priceCheckbox[i].checked == true) {
+    for (let i = 0; i < priceCheckbox.length; i++) {
+        if (priceCheckbox[i].checked == true) {
             priceSelected.push(priceCheckbox[i].value);
         }
     }
@@ -422,8 +445,8 @@ function filterSelected() {
     //Select by rate
     var rateCheckRadio = document.querySelectorAll(".filter .rate-check-radio");
     var rateSelected = '0';
-    for(let i = 0; i < rateCheckRadio.length; i++) {
-        if(rateCheckRadio[i].checked == true) {
+    for (let i = 0; i < rateCheckRadio.length; i++) {
+        if (rateCheckRadio[i].checked == true) {
             rateSelected = rateCheckRadio[i].value;
         }
     }
@@ -432,12 +455,12 @@ function filterSelected() {
 }
 
 // Hiển thị sản phẩm sau khi lọc
-function showItem(categoryTypeSelected=[], categoryConnectionSelected=[], categoryGamingSelected=[], brandSelected=[], priceSelected=[], rateSelected) {
+function showItem(categoryTypeSelected = [], categoryConnectionSelected = [], categoryGamingSelected = [], brandSelected = [], priceSelected = [], rateSelected) {
     var numberOfItems = 0;
     filterResultTitle.innerHTML = `Số sản phẩm (0)`;
     allProductItem.innerHTML = '';
 
-    for(let i = 0; i < listItem.length; i++) {
+    for (let i = 0; i < listItem.length; i++) {
         brand = listItem[i].brand;
         photo = listItem[i].photo;
         model = listItem[i].model;
@@ -447,36 +470,36 @@ function showItem(categoryTypeSelected=[], categoryConnectionSelected=[], catego
         isGamingType = listItem[i].isGamingType;
         rate = listItem[i].rate;
 
-        if(categoryTypeSelected.length > 0) {
-            if(categoryTypeSelected.includes(form) == false) continue;
+        if (categoryTypeSelected.length > 0) {
+            if (categoryTypeSelected.includes(form) == false) continue;
         }
 
-        if(categoryConnectionSelected.length > 0) {
-            if(categoryConnectionSelected.includes(isWireless) == false) continue;
+        if (categoryConnectionSelected.length > 0) {
+            if (categoryConnectionSelected.includes(isWireless) == false) continue;
         }
 
-        if(categoryGamingSelected.length > 0) {
-            if(categoryGamingSelected.includes(isGamingType) == false) continue;
+        if (categoryGamingSelected.length > 0) {
+            if (categoryGamingSelected.includes(isGamingType) == false) continue;
         }
 
-        if(brandSelected.length > 0) {
-            if(brandSelected.includes(brand) == false) continue;
+        if (brandSelected.length > 0) {
+            if (brandSelected.includes(brand) == false) continue;
         }
 
-        if(priceSelected.length > 0) {
-            if(price < 1000000 && priceSelected.includes('1') == false) continue;
-            if((price >= 1000000 && price < 3000000) && priceSelected.includes('2') == false) continue;
-            if((price >= 3000000 && price < 5000000) && priceSelected.includes('3') == false) continue;
-            if((price >= 5000000 && price < 10000000) && priceSelected.includes('4') == false) continue;
-            if(price >= 10000000 && priceSelected.includes('5') == false) continue;
+        if (priceSelected.length > 0) {
+            if (price < 1000000 && priceSelected.includes('1') == false) continue;
+            if ((price >= 1000000 && price < 3000000) && priceSelected.includes('2') == false) continue;
+            if ((price >= 3000000 && price < 5000000) && priceSelected.includes('3') == false) continue;
+            if ((price >= 5000000 && price < 10000000) && priceSelected.includes('4') == false) continue;
+            if (price >= 10000000 && priceSelected.includes('5') == false) continue;
         }
 
-        if(rateSelected !== '0') {
-            if(rateSelected === '5' && rate != 5) continue;
-            if(rateSelected === '4' && rate < 4) continue;
-            if(rateSelected === '3' && (rate < 3 || rate > 4)) continue;
-            if(rateSelected === '2' && (rate < 2 || rate > 3)) continue;
-            if(rateSelected === '1' && (rate < 1 || rate > 2)) continue;
+        if (rateSelected !== '0') {
+            if (rateSelected === '5' && rate != 5) continue;
+            if (rateSelected === '4' && rate < 4) continue;
+            if (rateSelected === '3' && (rate < 3 || rate > 4)) continue;
+            if (rateSelected === '2' && (rate < 2 || rate > 3)) continue;
+            if (rateSelected === '1' && (rate < 1 || rate > 2)) continue;
         };
 
         allProductItem.innerHTML += `
@@ -496,11 +519,11 @@ function showItem(categoryTypeSelected=[], categoryConnectionSelected=[], catego
     }
 }
 
-filterBtnCancel.addEventListener("click", function() {
+filterBtnCancel.addEventListener("click", function () {
     filterBtnClose.click();
 })
 
-filterBtnApply.addEventListener("click", function() {
+filterBtnApply.addEventListener("click", function () {
     filterSelected();
     filterBtnClose.click();
     renderDetailPage();
@@ -518,39 +541,39 @@ const addToCartForm = document.querySelectorAll(".add-to-cart-form");
 const liveToast = document.getElementById('liveToast');
 const toastBody = liveToast.querySelector(".toast-body");
 addToCartForm.forEach((form) => {
-        form.addEventListener("click", function() {
-            if(isLogin == "true") {
-                key = form.parentElement.querySelector(".id").id;
-                itemSelected.index = key;
-                itemSelected.photo = form.parentElement.querySelector("img").src;
-                itemSelected.model = form.parentElement.querySelector(".model").innerText;
-                itemSelected.price = form.parentElement.querySelector(".price").innerText;
-                var currentAmount = JSON.parse(localStorage.getItem(key));
-                if(currentAmount === null) {
-                    itemSelected.amount = 1;
-                }
-                else {
-                    itemSelected.amount = currentAmount.amount + 1;
-                }
-                localStorage.setItem(key, JSON.stringify(itemSelected));
-                const toast = new bootstrap.Toast(liveToast);
-                liveToast.style.border = "1px solid green";
-                liveToast.style.background = "rgba(209, 231, 221, 0.9)";
-                toastBody.innerHTML = `<p>Thêm thành công sản phẩm ${itemSelected.model} vào giỏ hàng</p>`
-                toast.show();
-
+    form.addEventListener("click", function () {
+        if (isLogin == "true") {
+            key = form.parentElement.querySelector(".id").id;
+            itemSelected.index = key;
+            itemSelected.photo = form.parentElement.querySelector("img").src;
+            itemSelected.model = form.parentElement.querySelector(".model").innerText;
+            itemSelected.price = form.parentElement.querySelector(".price").innerText;
+            var currentAmount = JSON.parse(localStorage.getItem(key));
+            if (currentAmount === null) {
+                itemSelected.amount = 1;
             }
             else {
-                const toast = new bootstrap.Toast(liveToast);
-                liveToast.style.border = "1px solid red";
-                liveToast.style.background = "rgba(244, 193, 193, 0.9)";
-                toastBody.innerHTML = `<p>Bạn chưa đăng nhập. Vui lòng đăng nhập để tiếp tục.</p>`
-                toast.show();
+                itemSelected.amount = currentAmount.amount + 1;
             }
+            localStorage.setItem(key, JSON.stringify(itemSelected));
+            const toast = new bootstrap.Toast(liveToast);
+            liveToast.style.border = "1px solid green";
+            liveToast.style.background = "rgba(209, 231, 221, 0.9)";
+            toastBody.innerHTML = `<p>Thêm thành công sản phẩm ${itemSelected.model} vào giỏ hàng</p>`
+            toast.show();
 
-            
-        })
-    }
+        }
+        else {
+            const toast = new bootstrap.Toast(liveToast);
+            liveToast.style.border = "1px solid red";
+            liveToast.style.background = "rgba(244, 193, 193, 0.9)";
+            toastBody.innerHTML = `<p>Bạn chưa đăng nhập. Vui lòng đăng nhập để tiếp tục.</p>`
+            toast.show();
+        }
+
+
+    })
+}
 )
 
 
