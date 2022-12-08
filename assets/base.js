@@ -12,7 +12,11 @@ const headerSearchBtn = document.querySelector(".header-search-btn");
 const formSearch = document.querySelector("header .form-search");
 const footerDropdownBtn = document.querySelectorAll("footer .navbar-toggler");
 const footerExpandNavbar = document.querySelectorAll("footer .navbar-brand");
-
+var temp = {
+    fullname: "",
+    phone: "",
+    address: ""
+}
 
 if (headerSearchBtn) {
     headerSearchBtn.addEventListener("click", function () {
@@ -20,16 +24,23 @@ if (headerSearchBtn) {
     })
 }
 
-if (usernames) {
-    for (i of usernames) {
-        var currentAccount = localStorage.getItem("currentAccount");
-        if (localStorage.getItem("currentAccount") != null) {
-            var currentAccountName = JSON.parse(localStorage.getItem(currentAccount)).fullname;
-            console.log(currentAccountName);
-            if (currentAccountName == "") {
-                i.innerText = "Bạn chưa đặt tên";
-            } else {
-                i.innerText = currentAccountName;
+if (isLogin == "true") {
+    if (usernames) {
+        for (i of usernames) {
+            var currentAccount = localStorage.getItem("currentAccount");
+            if (localStorage.getItem("currentAccount") != null) {
+                if (localStorage.getItem(currentAccount) == null) {
+                    localStorage.setItem(currentAccount, JSON.stringify(temp));
+                    var currentAccountName = JSON.parse(localStorage.getItem(currentAccount)).fullname;
+                }
+
+                var currentAccountName = JSON.parse(localStorage.getItem(currentAccount)).fullname;
+
+                if (currentAccountName == "" || currentAccountName == undefined) {
+                    i.innerText = "Bạn chưa đặt tên";
+                } else {
+                    i.innerText = currentAccountName;
+                }
             }
         }
     }

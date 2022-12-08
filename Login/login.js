@@ -23,7 +23,7 @@ const modalMessageBtn = document.querySelector(".modal-message-btn");
 const modalMessage = modalContent.querySelector(".message .modal-body");
 const modalFooter = modalContent.querySelector(".message .modal-footer");
 
-loginForm.addEventListener("submit", function (e) {
+loginForm.onsubmit = function (e) {
     e.preventDefault();
     var email = emailInput.value;
     var password = passwordInput.value;
@@ -44,8 +44,7 @@ loginForm.addEventListener("submit", function (e) {
             modalMessageBtn.click();
             localStorage.setItem("isLogin", true);
             setTimeout(function () {
-                loginForm.submit();
-                window.location.assign("../index.html");
+                window.location.assign('../index.html');
             }, 1500);
         }
         else {
@@ -57,4 +56,4 @@ loginForm.addEventListener("submit", function (e) {
         }
     }
 
-})
+}
