@@ -26,32 +26,27 @@ const modalFooter = modalContent.querySelector(".message .modal-footer");
 loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
     var email = emailInput.value;
-    var password = passwordInput.value; 
+    var password = passwordInput.value;
     var isSuccess = false;
-    var currentAccountInfo = {
-        fullname: "",
-        phone: "",
-        address: ""
-    }
-    for(let i = 0; i < listAccount.length; i++) {
-        if(email.localeCompare(listAccount[i].username) == 0
-        && password.localeCompare(listAccount[i].password) == 0) {
+
+    for (let i = 0; i < listAccount.length; i++) {
+        if (email.localeCompare(listAccount[i].username) == 0
+            && password.localeCompare(listAccount[i].password) == 0) {
             isSuccess = true;
             localStorage.setItem("currentAccount", email);
-            localStorage.setItem(email, JSON.stringify(currentAccountInfo));
         }
     }
-    if(loginForm.checkValidity()) {
-        if(isSuccess) {
+    if (loginForm.checkValidity()) {
+        if (isSuccess) {
             modalMessage.innerHTML = `<p>Đăng nhập thành công</p>`;
             modalMessage.style.background = "rgba(209, 231, 221, 0.9)";
             modalFooter.style.background = "rgba(209, 231, 221, 0.9)";
             modalMessageBtn.click();
             localStorage.setItem("isLogin", true);
-            setTimeout(function() {
+            setTimeout(function () {
                 loginForm.submit();
                 window.location.assign("../index.html");
-            }, 1500); 
+            }, 1500);
         }
         else {
             modalMessage.innerHTML = `<p>Địa chỉ email hoặc mật khẩu không đúng</p>`

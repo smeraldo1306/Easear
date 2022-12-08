@@ -18,37 +18,36 @@ var accountUpdated = {
     address: ""
 }
 
-if(isLogin == "true") {
+if (isLogin == "true") {
     var currentAccount = localStorage.getItem("currentAccount");
+    console.log(currentAccount);
     email.innerText = currentAccount;
-    
+
     fullname.value = JSON.parse(localStorage.getItem(currentAccount)).fullname;
     phone.value = JSON.parse(localStorage.getItem(currentAccount)).phone;
     address.value = JSON.parse(localStorage.getItem(currentAccount)).address;
-    
-    
+
+
     updateProfileBtn.addEventListener("click", function (e) {
         e.preventDefault();
         accountUpdated.fullname = fullname.value;
         accountUpdated.phone = phone.value;
         accountUpdated.address = address.value;
-        localStorage.removeItem(toString(currentAccount));
         localStorage.setItem(currentAccount, JSON.stringify(accountUpdated));
         modalMessage.innerHTML = `<p>Cập nhật thông tin thành công</p>`;
         modalMessage.style.background = "rgba(209, 231, 221, 0.9)";
         modalFooter.style.background = "rgba(209, 231, 221, 0.9)";
         modalMessageBtn.click();
-        localStorage.setItem("isLogin", true);
-        setTimeout(function() {
+        setTimeout(function () {
             profileForm.submit();
-        }, 1000); 
-    })
-    
+        }, 1000);
+    });
+
 }
 
 logoutBtn.addEventListener("click", function () {
     localStorage.setItem("isLogin", false);
-    window.location.assign("/index.html");
+    window.location.assign("../index.html");
 })
 
 

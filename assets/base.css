@@ -19,12 +19,12 @@ html {
 main {
     margin-top: var(--header-height);
     background:
-    radial-gradient(at 0% 0%, rgb(203, 195, 255) 0px, transparent 50%),
-    radial-gradient(at 13% 36%, hsla(195,100%,94%,1) 0px, transparent 50%),
-    radial-gradient(at 56% 86%, hsla(11,0%,94%,1) 0px, transparent 50%),
-    radial-gradient(at 69% 44%, hsla(44,100%,83%,1) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, hsla(204,100%,73%,1) 0px, transparent 50%),
-    radial-gradient(at 95% 5%, hsla(302,81%,90%,1) 0px, transparent 50%);
+        radial-gradient(at 0% 0%, rgb(203, 195, 255) 0px, transparent 50%),
+        radial-gradient(at 13% 36%, hsla(195, 100%, 94%, 1) 0px, transparent 50%),
+        radial-gradient(at 56% 86%, hsla(11, 0%, 94%, 1) 0px, transparent 50%),
+        radial-gradient(at 69% 44%, hsla(44, 100%, 83%, 1) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(204, 100%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 95% 5%, hsla(302, 81%, 90%, 1) 0px, transparent 50%);
 }
 
 h1 {
@@ -78,7 +78,8 @@ a {
 }
 
 
-button, .btn {
+button,
+.btn {
     outline: none;
     font-family: 'Kanit', sans-serif !important;
     font-weight: 400;
@@ -86,11 +87,13 @@ button, .btn {
     transition: .25s !important;
 }
 
-button:hover , .btn:hover {
+button:hover,
+.btn:hover {
     transform: scale(0.95);
 }
 
-button:focus, .btn:focus {
+button:focus,
+.btn:focus {
     box-shadow: none !important;
 }
 
@@ -152,7 +155,7 @@ header .user {
     margin: 16px 0 32px 0;
 }
 
-header .navbar .user > .row {
+header .navbar .user>.row {
     align-items: center;
 }
 
@@ -176,7 +179,7 @@ header .navbar .user-img {
     top: 0;
 }
 
-.user .dropdown .dropdown-toggle{
+.user .dropdown .dropdown-toggle {
     border: none;
     outline: none;
 }
@@ -187,7 +190,7 @@ header .navbar .user-img {
 }
 
 .rotate {
-    transform: rotate(-180deg) !important;
+    transform: rotate(180deg) !important;
 }
 
 .user .dropdown .dropdown-toggle::after {
@@ -202,6 +205,7 @@ header .navbar .user-img {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -260,7 +264,7 @@ header .nav-item:hover .nav-link {
     text-transform: uppercase;
 }
 
-footer .container-fluid{
+footer .container-fluid {
     background-color: var(--main-color);
 }
 
@@ -340,7 +344,7 @@ footer .copyright .world {
     margin-right: 8px;
 }
 
-footer .copyright .line{
+footer .copyright .line {
     transform: rotate(90deg);
 }
 

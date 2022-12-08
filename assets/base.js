@@ -1,8 +1,7 @@
 var isLogin = localStorage.getItem("isLogin");
 const user = document.querySelector(".user");
 const userLgScreen = document.querySelector(".user-lg-screen");
-const dropdownBtn = user.querySelector(".dropdown-toggle");
-const footerDropdownBtn = document.querySelectorAll("footer .navbar-toggler");
+const headerDropdownBtn = user.querySelector(".dropdown-toggle");
 const loginItem = document.querySelector(".navbar .login");
 const signUpItem = document.querySelector(".navbar .signup");
 const moveToProfilePage = document.querySelectorAll(".profile-detail");
@@ -11,34 +10,38 @@ const logOutBtn = document.querySelectorAll(".log-out");
 const usernames = document.querySelectorAll(".username");
 const headerSearchBtn = document.querySelector(".header-search-btn");
 const formSearch = document.querySelector("header .form-search");
+const footerDropdownBtn = document.querySelectorAll("footer .navbar-toggler");
+const footerExpandNavbar = document.querySelectorAll("footer .navbar-brand");
 
-if(headerSearchBtn) {
+
+if (headerSearchBtn) {
     headerSearchBtn.addEventListener("click", function () {
         formSearch.classList.toggle("show-search-input");
     })
 }
 
-if(usernames) {
-    for(i of usernames) {
+if (usernames) {
+    for (i of usernames) {
         var currentAccount = localStorage.getItem("currentAccount");
-        if(localStorage.getItem("currentAccount") != null) {
+        if (localStorage.getItem("currentAccount") != null) {
             var currentAccountName = JSON.parse(localStorage.getItem(currentAccount)).fullname;
-            if(currentAccountName == "") {
+            console.log(currentAccountName);
+            if (currentAccountName == "") {
                 i.innerText = "Bạn chưa đặt tên";
             } else {
                 i.innerText = currentAccountName;
             }
         }
-    }       
+    }
 }
 
-if(signUpItem) {
+if (signUpItem) {
     signUpItem.addEventListener("click", function () {
         localStorage.setItem("users", "[]");
     })
 }
 
-if(isLogin == "true") {
+if (isLogin == "true") {
     user.style = "display: block;";
     loginItem.style = "display: none;";
     signUpItem.style = "display: none;";
@@ -47,31 +50,38 @@ if(isLogin == "true") {
     userLgScreen.style.display = "none";
 }
 
-if(dropdownBtn) {
-    dropdownBtn.addEventListener("click", function () {
-        dropdownBtn.classList.toggle("rotate");
+if (headerDropdownBtn) {
+    headerDropdownBtn.addEventListener("click", function () {
+        headerDropdownBtn.classList.toggle("rotate");
     })
 }
 
-if(footerDropdownBtn) {
-    footerDropdownBtn.forEach(function(btn) {
+if (footerExpandNavbar) {
+    footerExpandNavbar.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+            btn.nextElementSibling.classList.toggle("rotate");
+        })
+    })
+}
+
+if (footerDropdownBtn) {
+    footerDropdownBtn.forEach(function (btn) {
         btn.addEventListener("click", function () {
             btn.classList.toggle("rotate");
         })
     })
 }
 
-// localStorage.setItem("isLogin", false);
-if(moveToProfilePage) {
-    for(i of moveToProfilePage) {
+if (moveToProfilePage) {
+    for (i of moveToProfilePage) {
         i.addEventListener("click", function () {
             window.open("../Profile/profile.html", '_blank');
         });
     }
 }
 
-if(switchAccountBtn) {
-    for(i of switchAccountBtn) {
+if (switchAccountBtn) {
+    for (i of switchAccountBtn) {
         i.addEventListener("click", function () {
             localStorage.setItem("isLogin", false);
             window.location.assign("../Login/login.html");
@@ -79,8 +89,8 @@ if(switchAccountBtn) {
     }
 }
 
-if(logOutBtn) {
-    logOutBtn.forEach(function(btn) {
+if (logOutBtn) {
+    logOutBtn.forEach(function (btn) {
         btn.addEventListener("click", function () {
             localStorage.setItem("isLogin", false);
             window.location.reload();
@@ -90,8 +100,8 @@ if(logOutBtn) {
 
 // Chuyển hướng đến trang giỏ hàng
 const moveToCartBtn = document.querySelector(".move-to-cart-btn");
-if(moveToCartBtn) {
-    moveToCartBtn.addEventListener('click', function() {
+if (moveToCartBtn) {
+    moveToCartBtn.addEventListener('click', function () {
         window.open('../Cart/cart.html', '_blank');
     });
 }
@@ -102,11 +112,11 @@ cartPopup.innerHTML = `<p class="empty-cart text-center">Không có sản phẩm
 if (isLogin == "true") {
     moveToCartBtn.classList.remove("disabled");
 
-    for(let i = 0; i < localStorage.length; i++) {
+    for (let i = 0; i < localStorage.length; i++) {
         const emptyCartNotification = document.querySelector(".empty-cart");
         key = parseInt(Object.keys(localStorage)[i]);
-        if(!isNaN(key)) {  
-            if(emptyCartNotification) emptyCartNotification.remove();       
+        if (!isNaN(key)) {
+            if (emptyCartNotification) emptyCartNotification.remove();
             itemRender = JSON.parse(localStorage.getItem(key));
             cartPopup.innerHTML += `
             <div class="row cart-item align-items-center mb-3">
@@ -116,7 +126,7 @@ if (isLogin == "true") {
             </div>
             `
         }
-    } 
+    }
 }
 
 else {
@@ -136,6 +146,6 @@ headerFormSearch.addEventListener("submit", function () {
 })
 
 
-window.onstorage = function() {
+window.onstorage = function () {
     location.reload();
 };
