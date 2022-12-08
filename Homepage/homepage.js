@@ -25,49 +25,6 @@ if (headerSearchBtn) {
     })
 }
 
-if (isLogin == "true") {
-    if (usernames) {
-        for (i of usernames) {
-            var currentAccount = localStorage.getItem("currentAccount");
-            if (localStorage.getItem("currentAccount") != null) {
-                if (localStorage.getItem(currentAccount) == null) {
-                    localStorage.setItem(currentAccount, JSON.stringify(temp));
-                    var currentAccountName = JSON.parse(localStorage.getItem(currentAccount)).fullname;
-                }
-
-                var currentAccountName = JSON.parse(localStorage.getItem(currentAccount)).fullname;
-
-                if (currentAccountName == "" || currentAccountName == undefined) {
-                    i.innerText = "Bạn chưa đặt tên";
-                } else {
-                    i.innerText = currentAccountName;
-                }
-            }
-        }
-    }
-}
-
-if (signUpItem) {
-    signUpItem.addEventListener("click", function () {
-        localStorage.setItem("users", "[]");
-    })
-}
-
-if (isLogin == "true") {
-    user.style = "display: block;";
-    loginItem.style = "display: none;";
-    signUpItem.style = "display: none;";
-} else {
-    user.style = "display: none;"
-    userLgScreen.style.display = "none";
-}
-
-if (headerDropdownBtn) {
-    headerDropdownBtn.addEventListener("click", function () {
-        headerDropdownBtn.classList.toggle("rotate");
-    })
-}
-
 if (footerExpandNavbar) {
     footerExpandNavbar.forEach(function (btn) {
         btn.addEventListener("click", function () {
@@ -82,33 +39,6 @@ if (footerDropdownBtn) {
             btn.classList.toggle("rotate");
         })
     })
-}
-
-// localStorage.setItem("isLogin", false);
-if (moveToProfilePage) {
-    for (i of moveToProfilePage) {
-        i.addEventListener("click", function () {
-            window.open("./Profile/profile.html", '_blank');
-        });
-    }
-}
-
-if (switchAccountBtn) {
-    for (i of switchAccountBtn) {
-        i.addEventListener("click", function () {
-            localStorage.setItem("isLogin", false);
-            window.location.assign("./Login/login.html");
-        });
-    }
-}
-
-if (logOutBtn) {
-    for (i of logOutBtn) {
-        i.addEventListener("click", function () {
-            localStorage.setItem("isLogin", false);
-            window.location.assign("./index.html");
-        })
-    }
 }
 
 // Chuyển hướng đến trang giỏ hàng
@@ -162,6 +92,74 @@ window.onstorage = function () {
     location.reload();
 };
 
-// localStorage.clear();
+if (isLogin == "true") {
+    if (usernames) {
+        for (i of usernames) {
+            var currentAccount = localStorage.getItem("currentAccount");
+            if (localStorage.getItem("currentAccount") != null) {
+                if (localStorage.getItem(currentAccount) == null) {
+                    localStorage.setItem(currentAccount, JSON.stringify(temp));
+                    var currentAccountName = JSON.parse(localStorage.getItem(currentAccount)).fullname;
+                }
+
+                var currentAccountName = JSON.parse(localStorage.getItem(currentAccount)).fullname;
+
+                if (currentAccountName == "" || currentAccountName == undefined) {
+                    i.innerText = "Bạn chưa đặt tên";
+                } else {
+                    i.innerText = currentAccountName;
+                }
+            }
+        }
+    }
+}
+
+if (signUpItem) {
+    signUpItem.addEventListener("click", function () {
+        localStorage.setItem("users", "[]");
+    })
+}
+
+if (isLogin == "true") {
+    user.style = "display: block;";
+    loginItem.style = "display: none;";
+    signUpItem.style = "display: none;";
+} else {
+    user.style = "display: none;"
+    userLgScreen.style.display = "none";
+}
+
+if (headerDropdownBtn) {
+    headerDropdownBtn.addEventListener("click", function () {
+        headerDropdownBtn.classList.toggle("rotate");
+    })
+}
+
+if (moveToProfilePage) {
+    for (i of moveToProfilePage) {
+        i.addEventListener("click", function () {
+            window.open("./Profile/profile.html", '_blank');
+        });
+    }
+}
+
+if (switchAccountBtn) {
+    for (i of switchAccountBtn) {
+        i.addEventListener("click", function () {
+            localStorage.setItem("isLogin", false);
+            window.location.assign("./Login/login.html");
+        });
+    }
+}
+
+if (logOutBtn) {
+    for (i of logOutBtn) {
+        i.addEventListener("click", function () {
+            localStorage.setItem("isLogin", false);
+            window.location.assign("./index.html");
+        })
+    }
+}
+
 
 
